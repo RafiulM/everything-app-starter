@@ -1,117 +1,129 @@
-# Project Requirements Document: codeguide-starter
-
----
+# Project Requirements Document for "everything-app-starter"
 
 ## 1. Project Overview
 
-The **codeguide-starter** project is a boilerplate web application that provides a ready-made foundation for any web project requiring secure user authentication and a post-login dashboard. It sets up the common building blocks—sign-up and sign-in pages, API routes to handle registration and login, and a simple dashboard interface driven by static data. By delivering this skeleton, it accelerates development time and ensures best practices are in place from day one.
+"everything-app-starter" is a full-stack web application boilerplate built on Next.js. Its goal is to provide developers with a complete, ready-to-use foundation that covers common needs—authentication, database integration, theming, UI components, and deployment configurations—so they can focus on adding advanced AI features like Chat, Search, and Image Generation. By bundling these best practices and core modules, the starter kit dramatically reduces setup time and ensures consistency across projects.
 
-This starter kit is being built to solve the friction developers face when setting up repeated common tasks: credential handling, session management, page routing, and theming. Key objectives include: 1) delivering a fully working authentication flow (registration & login), 2) providing a gated dashboard area upon successful login, 3) establishing a clear, maintainable project structure using Next.js and TypeScript, and 4) demonstrating a clean theming approach with global and section-specific CSS. Success is measured by having an end-to-end login journey in under 200 lines of code and zero runtime type errors.
+The boilerplate is being built to support the development of an "everything-app" AI super-app, which will deliver multi-modal AI experiences to authenticated users. The key objectives are:
+
+- Enable secure user management and personalized data storage.
+- Provide a polished, themable UI shell that can host dynamic AI interfaces.
+- Offer a server-ready architecture for streaming AI model responses.
+- Simplify local and production deployment via Docker.
+
+Success will be measured by how quickly developers can spin up the starter, integrate an AI model using `@ai-sdk`, and deploy an interactive AI chat or search interface.
 
 ---
 
 ## 2. In-Scope vs. Out-of-Scope
 
-### In-Scope (Version 1)
-- User registration (sign-up) form with validation
-- User login (sign-in) form with validation
-- Next.js API routes under `/api/auth/route.ts` handling:
-  - Credential validation
-  - Password hashing (e.g., bcrypt)
-  - Session creation or JWT issuance
-- Protected dashboard pages under `/dashboard`:
-  - `layout.tsx` wrapping dashboard content
-  - `page.tsx` rendering static data from `data.json`
-- Global application layout in `/app/layout.tsx`
-- Basic styling via `globals.css` and `dashboard/theme.css`
-- TypeScript strict mode enabled
+### In-Scope (First Version)
+- **User Authentication:** Sign-up, sign-in, sign-out flows using Better Auth.  
+- **Database Integration:** PostgreSQL configured with Drizzle ORM for storing users, chat sessions, and related metadata.  
+- **UI Shell & Theming:** Tailwind CSS, `shadcn/ui` components, and `next-themes` for light/dark mode.  
+- **Dashboard Layout:** A basic dashboard page with sidebar navigation and main content area.  
+- **AI Chat Scaffold:**  
+  - Frontend chat page at `/app/chat/page.tsx` using `assistant-ui`.  
+  - Backend API route at `/app/api/chat/route.ts` to stream model responses via `@ai-sdk`.  
+- **Docker Setup:** `Dockerfile` and `docker-compose.yml` for local dev and production deployment.  
 
-### Out-of-Scope (Later Phases)
-- Integration with a real database (PostgreSQL, MongoDB, etc.)
-- Advanced authentication flows (password reset, email verification, MFA)
-- Role-based access control (RBAC)
-- Multi-tenant or white-label theming
-- Unit, integration, or end-to-end testing suites
-- CI/CD pipeline and production deployment scripts
+### Out-of-Scope (Planned for Later Phases)
+- File upload and multi-modal attachment handling.  
+- Fully developed AI Search and Image Generation frontends.  
+- Advanced state management beyond simple React context (e.g., global model selector with Zustand).  
+- CI/CD pipelines and testing framework configurations (beyond basic code structure).  
+- Third-party storage integrations (AWS S3, Cloudinary) for assets.  
 
 ---
 
 ## 3. User Flow
 
-A new visitor lands on the root URL and sees a welcome page with options to **Sign Up** or **Sign In**. If they choose Sign Up, they fill in their email, password, and hit “Create Account.” The form submits to `/api/auth/route.ts`, which hashes the password, creates a new user session or token, and redirects them to the dashboard. If any input is invalid, an inline error message explains the issue (e.g., “Password too short”).
+When a new user visits the app, they land on the sign-in page. They can create an account via email and password or sign in if they already have credentials. Upon successful authentication, they are redirected to the dashboard. The left sidebar presents navigation options—Chat, Search, Image Gen—and the main content area welcomes them with an overview or prompts to start a conversation.
 
-Once authenticated, the user is taken to the `/dashboard` route. Here they see a sidebar or header defined by `dashboard/layout.tsx`, and the main panel pulls in static data from `data.json`. They can log out (if that control is present), but otherwise their entire session is managed by server-side cookies or tokens. Returning users go directly to Sign In, submit credentials, and upon success they land back on `/dashboard`. Any unauthorized access to `/dashboard` redirects back to Sign In.
+If the user clicks "Chat," they see the chat interface rendered by `assistant-ui`. They type a prompt into the input field and hit send. Under the hood, the message goes to `/app/api/chat/route.ts`, which validates the session, forwards the prompt to an AI model using `@ai-sdk`, and streams the response back. The UI displays each chunk in real time. Once the message exchange is complete, the conversation is saved to the PostgreSQL database, and the user can continue the chat or navigate to other features.
 
 ---
 
 ## 4. Core Features
 
-- **Sign-Up Page (`/app/sign-up/page.tsx`)**: Form fields for email & password, client-side validation, POST to `/api/auth`.
-- **Sign-In Page (`/app/sign-in/page.tsx`)**: Form fields for email & password, client-side validation, POST to `/api/auth`.
-- **Authentication API (`/app/api/auth/route.ts`)**: Handles both registration and login based on HTTP method, integrates password hashing (bcrypt) and session or JWT logic.
-- **Global Layout (`/app/layout.tsx` + `globals.css`)**: Shared header, footer, and CSS resets across all pages.
-- **Dashboard Layout (`/app/dashboard/layout.tsx` + `dashboard/theme.css`)**: Sidebar or top nav for authenticated flows, section-specific styling.
-- **Dashboard Page (`/app/dashboard/page.tsx`)**: Reads `data.json`, renders it as cards or tables.
-- **Static Data Source (`/app/dashboard/data.json`)**: Example dataset to demo dynamic rendering.
-- **TypeScript Configuration**: `tsconfig.json` with strict mode and path aliases (if any).
+- **Authentication Module**  
+  - Sign-up, sign-in, sign-out flows using Better Auth.  
+  - Session handling and protected routes for AI features.
+- **Database Layer**  
+  - Drizzle ORM schemas for `users`, `chats`, `messages`.  
+  - Migration support and type-safe queries.
+- **Dashboard & Routing**  
+  - Next.js App Router with Server Components.  
+  - Sidebar navigation and main content area template.
+- **UI & Theming**  
+  - Tailwind CSS v4 and `next-themes` for light/dark mode.  
+  - `shadcn/ui` component library for consistent styling.
+- **AI Chat Integration**  
+  - Frontend chat page using `assistant-ui` components.  
+  - API route with session check, input validation (Zod), and streaming via `@ai-sdk`.
+- **Docker & Deployment**  
+  - `Dockerfile` for building the Next.js app.  
+  - `docker-compose.yml` to stand up the app and PostgreSQL locally.
 
 ---
 
 ## 5. Tech Stack & Tools
 
-- **Framework**: Next.js (App Router) for file-based routing, SSR/SSG, and API routes.
-- **Language**: TypeScript for type safety.
-- **UI Library**: React 18 for component-based UI.
-- **Styling**: Plain CSS via `globals.css` (global reset) and `theme.css` (sectional styling). Can easily migrate to CSS Modules or Tailwind in the future.
-- **Backend**: Node.js runtime provided by Next.js API routes.
-- **Password Hashing**: bcrypt (npm package).
-- **Session/JWT**: NextAuth.js or custom JWT logic (to be decided in implementation).
-- **IDE & Dev Tools**: VS Code with ESLint, Prettier extensions. Optionally, Cursor.ai for AI-assisted coding.
+- **Frontend Framework:** Next.js (App Router) with Server Components  
+- **Language:** TypeScript  
+- **Authentication:** Better Auth  
+- **Database:** PostgreSQL  
+- **ORM:** Drizzle ORM  
+- **Styling:** Tailwind CSS v4, `next-themes`  
+- **UI Components:** `shadcn/ui`, `assistant-ui` (for AI chat)  
+- **AI SDK:** Vercel’s `@ai-sdk` for streaming model responses  
+- **Validation:** Zod (for request schemas)  
+- **Containerization:** Docker, Docker Compose  
+- **Potential IDE Plugins:** Cursor (AI coding assistant), Windsurf (Next.js productivity)
 
 ---
 
 ## 6. Non-Functional Requirements
 
-- **Performance**: Initial page load under 200 ms on a standard broadband connection. API responses under 300 ms.
-- **Security**:
-  - HTTPS only in production.
-  - Proper CORS, CSRF protection for API routes.
-  - Secure password storage (bcrypt with salt).
-  - No credentials or secrets checked into version control.
-- **Scalability**: Structure must support adding database integration, caching layers, and advanced auth flows without rewiring core app.
-- **Usability**: Forms should give real-time feedback on invalid input. Layout must be responsive (mobile > 320 px).
-- **Maintainability**: Code must adhere to TypeScript strict mode. Linting & formatting enforced by ESLint/Prettier.
+- **Performance:**  
+  - Initial page load under 1 second.  
+  - AI streaming responses render each chunk within 100ms of arrival.  
+- **Security:**  
+  - All AI endpoints require valid user sessions.  
+  - Input validation via Zod to prevent injection attacks.  
+- **Usability:**  
+  - Accessible design (ARIA roles, keyboard nav).  
+  - Theme toggle easily reachable.  
+- **Scalability:**  
+  - Database connections pooled for concurrent chat sessions.  
+  - Dockerized services for horizontal scaling.
 
 ---
 
 ## 7. Constraints & Assumptions
 
-- **No Database**: Dashboard uses only `data.json`; real database integration is deferred.
-- **Node Version**: Requires Node.js >= 14.
-- **Next.js Version**: Built on Next.js 13+ App Router.
-- **Authentication**: Assumes availability of bcrypt or NextAuth.js at implementation time.
-- **Hosting**: Targets serverless or Node.js-capable hosting (e.g., Vercel, Netlify).
-- **Browser Support**: Modern evergreen browsers; no IE11 support required.
+- The environment has access to Vercel’s `@ai-sdk` and required AI model API keys.  
+- PostgreSQL is available locally or in the target production environment.  
+- Developers will install `assistant-ui` after pulling the starter.  
+- Next.js App Router features (Server Components, Route Handlers) are supported by the hosting platform.  
+- Better Auth credentials and database credentials are provided via environment variables.
 
 ---
 
 ## 8. Known Issues & Potential Pitfalls
 
-- **Static Data Limitation**: `data.json` is only for demo. A real API or database will be needed to avoid stale data.
-  *Mitigation*: Define a clear interface for data fetching so swapping to a live endpoint is trivial.
+- **API Rate Limits:**  
+  - AI model providers may throttle requests. Mitigation: implement retry logic and backoff.  
+- **Streaming Edge Cases:**  
+  - Partial or interrupted streams could hang the UI. Mitigation: set timeouts and fallback error messages.  
+- **Database Migrations:**  
+  - Schema changes can break existing data. Mitigation: use Drizzle’s migration tooling and version control.  
+- **CORS or Session Expiry:**  
+  - Calls from client to API route might fail if cookies aren’t forwarded. Mitigation: ensure `fetch` uses `credentials: 'include'`.
+- **Theme FOUC (Flash of Unstyled Content):**  
+  - Initial theme flash if SSR and client theme mismatch. Mitigation: follow `next-themes` recommended _Document_ setup.
 
-- **Global CSS Conflicts**: Using global styles can lead to unintended overrides.
-  *Mitigation*: Plan to migrate to CSS Modules or utility-first CSS in Phase 2.
-
-- **API Route Ambiguity**: Single `/api/auth/route.ts` handling both sign-up and sign-in could get complex.
-  *Mitigation*: Clearly branch on HTTP method (`POST /register` vs. `POST /login`) or split into separate files.
-
-- **Lack of Testing**: No test suite means regressions can slip in.
-  *Mitigation*: Build a minimal Jest + React Testing Library setup in an early iteration.
-
-- **Error Handling Gaps**: Client and server must handle edge cases (network failures, malformed input).
-  *Mitigation*: Define a standard error response schema and show user-friendly messages.
 
 ---
 
-This PRD should serve as the single source of truth for the AI model or any developer generating the next set of technical documents: Tech Stack Doc, Frontend Guidelines, Backend Structure, App Flow, File Structure, and IDE Rules. It contains all functional and non-functional requirements with no ambiguity, enabling seamless downstream development.
+*This document serves as the definitive reference for building and extending the "everything-app-starter". All future technical specifications—frontend guidelines, backend architecture, file conventions—should align with the details laid out above.*
