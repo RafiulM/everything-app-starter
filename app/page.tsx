@@ -12,38 +12,22 @@ import {
   Package,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { AuthButtons, HeroAuthButtons } from "@/components/auth-buttons";
-import Image from "next/image";
+import { AuthButtons } from "@/components/auth-buttons";
+import { HeroSection } from "@/components/marketing/hero-section";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Hero Section */}
-      <div className="text-center py-12 sm:py-16 relative px-4">
-        <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
+      <div className="relative">
+        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-10">
           <div className="flex items-center gap-2 sm:gap-3">
             <AuthButtons />
             <ThemeToggle />
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-4">
-          <Image
-            src="/codeguide-logo.png"
-            alt="CodeGuide Logo"
-            width={50}
-            height={50}
-            className="rounded-xl sm:w-[60px] sm:h-[60px]"
-          />
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent font-parkinsans">
-            Codeguide Starter Fullstack
-          </h1>
-        </div>
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4 mb-8">
-          A modern full-stack TypeScript starter with authentication, database, and UI components
-        </p>
-        
-        <HeroAuthButtons />
+        <HeroSection />
       </div>
 
       <main className="container mx-auto px-4 sm:px-6 pb-12 sm:pb-8 max-w-5xl">
