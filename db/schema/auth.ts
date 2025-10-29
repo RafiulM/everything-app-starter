@@ -1,4 +1,4 @@
-import { pgTable, text, timestamp, boolean } from "drizzle-orm/pg-core";
+import { pgTable, text, timestamp, boolean, varchar, index } from "drizzle-orm/pg-core";
 
 export const user = pgTable("user", {
     id: text("id").primaryKey(),
@@ -59,3 +59,25 @@ export const verification = pgTable("verification", {
         () => /* @__PURE__ */ new Date(),
     ),
 });
+
+export const userApiKeys = pgTable("user_api_keys", {
+    id: text("id").primaryKey(),
+    userId: text("user_id")
+        .notNull()
+        .references(() => user.id, { onDelete: "cascade" }),
+    serviceProvider: varchar("service_provider", { length: 100 }).notNull(),
+    encryptedKey: text("encrypted_key").notNull(),
+    keyName: varchar("key_name", { length: 255 }).notNull(),
+    isActive: boolean("is_active")
+        .$defaultFn(() => true)
+        .notNull(),
+    createdAt: timestamp("created_at")
+        .$defaultFn(() => /* @__PURE__ */ new Date())
+        .notNull(),
+    updatedAt: timestamp("updated_at")
+        .$defaultFn(() => /* @__PURE__ */ new Date())
+        .notNull(),
+}, (table) => ({
+    userIdIdx: index("user_api_keys_user_id_idx").on(table.userId),
+    serviceProviderIdx: index("user_api_keys_service_provider_idx").on(table.serviceProvider),
+}));
