@@ -113,8 +113,13 @@ const staticData = {
   ],
   navSecondary: [
     {
+      title: "API Keys",
+      url: "/dashboard/settings/api-keys",
+      icon: IconSettings,
+    },
+    {
       title: "Settings",
-      url: "#",
+      url: "/dashboard/settings",
       icon: IconSettings,
     },
     {
