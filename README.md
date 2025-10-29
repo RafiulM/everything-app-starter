@@ -1,87 +1,346 @@
-# Codeguide Starter Fullstack
+# Everything App Starter
 
-A modern web application starter template built with Next.js 15, featuring authentication, database integration, and dark mode support.
+<!-- BADGES -->
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
+A comprehensive full-stack application starter template built with Next.js 15, featuring authentication, database integration, AI capabilities, and modern development best practices. This template provides everything you need to build production-ready web applications quickly.
+
+## Table of Contents
+
+- [About This Project](#about-this-project)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Quick Start](#quick-start)
+  - [Environment Setup](#environment-setup)
+  - [Database Setup](#database-setup)
+- [API Key Management](#api-key-management)
+- [Project Structure](#project-structure)
+- [Development](#development)
+  - [Available Scripts](#available-scripts)
+  - [Database Operations](#database-operations)
+  - [Docker Development](#docker-development)
+- [Deployment](#deployment)
+  - [Production Deployment](#production-deployment)
+  - [Environment Variables for Production](#environment-variables-for-production)
+  - [Deployment Options](#deployment-options)
+- [Architecture](#architecture)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About This Project
+
+The Everything App Starter is a modern, production-ready full-stack template designed to accelerate web development. Built with the latest technologies and best practices, it provides a solid foundation for building scalable, secure, and feature-rich applications.
+
+### Key Highlights
+
+- 🚀 **Next.js 15** with App Router and Turbopack for optimal performance
+- 🔐 **Complete Authentication** system with Better Auth
+- 🗄️ **Type-safe Database** with Drizzle ORM and PostgreSQL
+- 🎨 **Modern UI** with 40+ shadcn/ui components and dark mode
+- 🐳 **Docker Support** with multi-stage builds and development workflows
+- 🤖 **AI-Ready** architecture for easy AI service integration
+- 📱 **Responsive Design** with Tailwind CSS v4
+- 🔒 **Security First** with modern authentication patterns and best practices
+
+<!-- SCREENSHOTS_PLACEHOLDER -->
+
+## Features
+
+### 🔐 Authentication & Security
+- **Complete Auth System**: Email/password authentication with Better Auth
+- **Session Management**: Secure session handling with HTTP-only cookies
+- **Type-Safe Auth**: Fully typed authentication with TypeScript
+- **Social Login Ready**: Easy integration for OAuth providers
+- **Password Security**: Secure password hashing and validation
+
+### 🗄️ Database & Data Management
+- **Type-Safe Database**: Drizzle ORM with full TypeScript support
+- **PostgreSQL Integration**: Production-ready database setup
+- **Database Migrations**: Easy schema management with Drizzle Kit
+- **Database Studio**: Built-in database GUI with Drizzle Studio
+- **Connection Pooling**: Optimized database connections
+
+### 🎨 User Interface & Experience
+- **40+ UI Components**: Complete shadcn/ui component library (New York style)
+- **Dark Mode**: Automatic dark/light theme switching with system detection
+- **Responsive Design**: Mobile-first approach with Tailwind CSS v4
+- **Customizable Theme**: CSS variables for easy theming
+- **Modern Icons**: Lucide React icon library
+- **Accessibility**: WCAG compliant components
+
+### 🚀 Development & Performance
+- **Next.js 15**: Latest version with App Router and Turbopack
+- **Server Components**: Optimized server-side rendering
+- **TypeScript**: Full type safety across the application
+- **Hot Reload**: Fast development with instant feedback
+- **Code Quality**: ESLint and Prettier pre-configured
+- **AI-Optimized**: Clean structure for AI coding agents
+
+### 🐳 Deployment & DevOps
+- **Docker Support**: Multi-stage Docker builds
+- **Development Workflows**: Docker Compose for local development
+- **Production Ready**: Optimized builds for deployment
+- **Health Checks**: Built-in application health monitoring
+- **Environment Management**: Secure environment variable handling
+
+### 🔧 Developer Experience
+- **Modern Tooling**: Latest JavaScript/TypeScript ecosystem
+- **Clear Documentation**: Comprehensive guides and examples
+- **Database GUI**: Visual database management tools
+- **CLI Scripts**: Convenient npm scripts for common tasks
+- **Component Library**: Easy addition of new UI components
 
 ## Tech Stack
 
-- **Framework:** [Next.js 15](https://nextjs.org/) (App Router with Turbopack)
-- **Language:** TypeScript
-- **Authentication:** [Better Auth](https://better-auth.com/)
-- **Database:** [Drizzle ORM](https://orm.drizzle.team/) with PostgreSQL
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (New York style)
-- **Theme System:** [next-themes](https://github.com/pacocoursey/next-themes)
-- **Icons:** [Lucide React](https://lucide.dev/)
+### Frontend
+- **Framework**: [Next.js 15](https://nextjs.org/) - React framework with App Router and Turbopack
+- **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) - Utility-first CSS framework
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/) - High-quality component library
+- **Theme System**: [next-themes](https://github.com/pacocoursey/next-themes) - Dark mode support
+- **Icons**: [Lucide React](https://lucide.dev/) - Beautiful icon set
 
-## Prerequisites
+### Backend & Database
+- **Authentication**: [Better Auth](https://better-auth.com/) - Modern authentication library
+- **Database**: [PostgreSQL](https://www.postgresql.org/) - Powerful relational database
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/) - Type-safe SQL toolkit
+- **Database Toolkit**: [Drizzle Kit](https://orm.drizzle.team/kit-docs-overview) - Database migration tool
 
-Before you begin, ensure you have the following:
-- Node.js 18+ installed
-- Docker and Docker Compose (for database setup)
-- Generated project documents from [CodeGuide](https://codeguide.dev/) for best development experience
+### Development & Deployment
+- **Containerization**: [Docker](https://www.docker.com/) - Container platform
+- **Package Manager**: [npm](https://www.npmjs.com/) - JavaScript package manager
+- **Code Quality**: [ESLint](https://eslint.org/) - JavaScript linter
+- **Development Server**: [Turbopack](https://turbo.build/pack) - Fast bundler
+
+### External Integrations Ready
+- **AI Services**: Ready for OpenAI, Anthropic, and other AI providers
+- **Payment Gateways**: Ready for Stripe, PayPal integration
+- **Email Services**: Ready for SendGrid, Resend integration
+- **File Storage**: Ready for AWS S3, Cloudflare R2 integration
 
 ## Getting Started
 
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js 18+** - [Download Node.js](https://nodejs.org/)
+- **npm** (comes with Node.js) or [yarn](https://yarnpkg.com/) / [pnpm](https://pnpm.io/)
+- **Docker & Docker Compose** - [Get Docker](https://docs.docker.com/get-docker/) (for database)
+- **Git** - [Download Git](https://git-scm.com/)
+
+### Quick Start
+
+Get your application running in under 5 minutes:
+
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd codeguide-starter-fullstack
+   git clone https://github.com/your-username/everything-app-starter.git
+   cd everything-app-starter
    ```
 
 2. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
-   # or
-   pnpm install
    ```
 
-3. **Environment Variables Setup**
-   - Copy the `.env.example` file to `.env`:
-     ```bash
-     cp .env.example .env
-     ```
-   - The default values work with Docker setup, modify as needed
-
-4. **Start the development server**
+3. **Set up environment variables**
    ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
+   cp .env.example .env
    ```
 
-5. **Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
+4. **Start the database and application**
+   ```bash
+   # Start PostgreSQL database
+   npm run db:up
 
-## Configuration
+   # In a new terminal, start the development server
+   npm run dev
+   ```
 
-### Option 1: Docker Setup (Recommended)
-1. **Start PostgreSQL with Docker:**
+5. **Visit your application**
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Environment Setup
+
+1. **Copy the environment file**
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Configure your environment variables** (see [API Key Management](#api-key-management) for details)
+   ```env
+   # Database Configuration (works with Docker setup)
+   DATABASE_URL=postgresql://postgres:postgres@localhost:5433/postgres
+   POSTGRES_DB=postgres
+   POSTGRES_USER=postgres
+   POSTGRES_PASSWORD=postgres
+
+   # Authentication
+   BETTER_AUTH_SECRET=your_secret_key_here
+   BETTER_AUTH_URL=http://localhost:3000
+   NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
+   ```
+
+3. **Generate a secure auth secret**
+   ```bash
+   # Generate a secure secret for Better Auth
+   openssl rand -base64 32
+   ```
+   Copy the output and use it for `BETTER_AUTH_SECRET`.
+
+### Database Setup
+
+#### Option 1: Docker (Recommended)
+
+The easiest way to get started is using the provided Docker setup:
+
+1. **Start PostgreSQL database**
    ```bash
    npm run db:up
    ```
    This starts PostgreSQL in a Docker container with default credentials.
 
-2. **Push database schema:**
+2. **Initialize the database schema**
    ```bash
    npm run db:push
    ```
 
-### Option 2: Local Database Setup
-1. Create a PostgreSQL database locally
-2. Update your environment variables in `.env`:
-   ```env
-   DATABASE_URL=postgresql://username:password@localhost:5432/database_name
-   POSTGRES_DB=your_database_name
-   POSTGRES_USER=your_username
-   POSTGRES_PASSWORD=your_password
+#### Option 2: Local Database
+
+If you prefer to use a local PostgreSQL installation:
+
+1. **Create a PostgreSQL database**
+   ```sql
+   CREATE DATABASE everything_app;
+   CREATE USER everything_user WITH PASSWORD 'your_password';
+   GRANT ALL PRIVILEGES ON DATABASE everything_app TO everything_user;
    ```
-3. Run database migrations:
+
+2. **Update your .env file**
+   ```env
+   DATABASE_URL=postgresql://everything_user:your_password@localhost:5432/everything_app
+   ```
+
+3. **Run database migrations**
    ```bash
    npm run db:push
    ```
+
+### Verify Your Setup
+
+1. **Check database connection**
+   ```bash
+   npm run db:studio
+   ```
+   This opens Drizzle Studio in your browser where you can explore the database.
+
+2. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Test authentication**
+   - Visit [http://localhost:3000](http://localhost:3000)
+   - Try signing up for a new account
+   - Verify you can log in and log out
+
+### Next Steps
+
+- [API Key Management](#api-key-management) - Set up AI service integrations
+- [Project Structure](#project-structure) - Understand the codebase
+- [Development](#development) - Learn about available scripts
+- [Deployment](#deployment) - Deploy to production
+
+## API Key Management
+
+This application supports two levels of API key management for AI services and external integrations:
+
+### Application-Level API Keys
+
+These are set in your environment variables and are available to all users of your application.
+
+#### AI Service Keys
+Add these to your `.env` file to enable AI features:
+
+```env
+# OpenAI (optional)
+OPENAI_API_KEY=sk-your-openai-key-here
+
+# Anthropic Claude (optional)
+ANTHROPIC_API_KEY=sk-ant-your-anthropic-key-here
+
+# Google AI (optional)
+GOOGLE_AI_API_KEY=your-google-ai-key-here
+
+# Other AI Services (optional)
+ANYSCALE_API_KEY=your-anyscale-key-here
+TOGETHER_API_KEY=your-together-key-here
+```
+
+#### Other Service Keys
+```env
+# Email Services (optional)
+RESEND_API_KEY=re-your-resend-key-here
+SENDGRID_API_KEY=SG.your-sendgrid-key-here
+
+# Payment Processing (optional)
+STRIPE_SECRET_KEY=sk_test_your-stripe-key-here
+STRIPE_WEBHOOK_SECRET=whsec_your-webhook-secret-here
+
+# File Storage (optional)
+AWS_ACCESS_KEY_ID=your-aws-access-key
+AWS_SECRET_ACCESS_KEY=your-aws-secret-key
+AWS_REGION=us-east-1
+AWS_S3_BUCKET=your-bucket-name
+```
+
+### User-Provided API Keys
+
+The application also supports allowing individual users to provide their own API keys through the UI. These keys are:
+
+- **Stored securely** in the database (encrypted at rest)
+- **Isolated per user** - each user only has access to their own keys
+- **Managed through the UI** - users can add, update, and remove their keys
+- **Used for AI requests** - when a user makes an AI request, their personal key is used if provided
+
+#### Setting Up User Key Management
+
+To enable user-provided API keys:
+
+1. **The database schema is already set up** with encrypted storage for API keys
+2. **UI components are included** for key management
+3. **Server-side logic automatically** uses user keys when available, falling back to application keys
+
+#### Security Best Practices
+
+- **Never commit API keys to version control**
+- **Use environment variables for production secrets**
+- **Implement key rotation policies** for production applications
+- **Monitor API usage and costs** associated with each key
+- **Use separate keys for development and production**
+- **Consider using a secret management service** like AWS Secrets Manager or HashiCorp Vault for production
+
+#### Getting API Keys
+
+**OpenAI**
+1. Visit [OpenAI Platform](https://platform.openai.com/api-keys)
+2. Create a new API key
+3. Add `OPENAI_API_KEY` to your `.env` file
+
+**Anthropic Claude**
+1. Visit [Anthropic Console](https://console.anthropic.com/)
+2. Generate an API key
+3. Add `ANTHROPIC_API_KEY` to your `.env` file
+
+**Google AI**
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create a new API key
+3. Add `GOOGLE_AI_API_KEY` to your `.env` file
 
 ## Environment Variables
 
