@@ -4,25 +4,23 @@
 
 A modern full‑stack starter built on Next.js 15 (App Router) with authentication, PostgreSQL via Drizzle ORM, Tailwind CSS v4, and a polished UI kit (shadcn/ui). It includes Docker support, ready‑to‑use database scripts, and a clean structure that’s friendly for both humans and AI coding agents.
 
-
 ## Table of Contents
-- Project Overview
-- Key Features
-- Tech Stack
-- Getting Started
-- Environment Variables
-- Database & Migrations
-- Available Scripts
-- Project Structure
-- Docker (Dev & Prod)
-- Deployment
-- Additional Docs
-- Contributing
-
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Database & Migrations](#database--migrations)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Docker](#docker)
+- [Deployment](#deployment)
+- [Additional Docs](#additional-docs)
+- [Contributing](#contributing)
+- [Troubleshooting](#troubleshooting)
 
 ## Project Overview
 This template accelerates building authenticated, data‑driven Next.js apps. It ships with Better Auth for session management, Drizzle ORM for type‑safe SQL, and a curated set of shadcn/ui components with dark mode.
-
 
 ## Key Features
 - Authentication with Better Auth (email/password)
@@ -33,7 +31,6 @@ This template accelerates building authenticated, data‑driven Next.js apps. It
 - First‑class Docker support (dev and prod)
 - Opinionated structure and scripts
 
-
 ## Tech Stack
 - Framework: Next.js 15 (App Router)
 - Language: TypeScript
@@ -41,7 +38,6 @@ This template accelerates building authenticated, data‑driven Next.js apps. It
 - Database: PostgreSQL + Drizzle ORM
 - Styling: Tailwind CSS v4
 - UI: shadcn/ui + Lucide icons
-
 
 ## Getting Started
 
@@ -71,7 +67,6 @@ npm run dev
 ```
 Open http://localhost:3000
 
-
 ## Environment Variables
 These are the important variables (see `.env.example` for defaults):
 ```env
@@ -87,18 +82,18 @@ BETTER_AUTH_URL=http://localhost:3000
 NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:3000
 ```
 
-
 ## Database & Migrations
 Use Drizzle Kit for schema management.
 
 - Start Postgres in Docker (dev): `npm run db:dev`
 - Push schema to the DB: `npm run db:push`
 - Generate migrations: `npm run db:generate`
+- Apply migrations: `npm run db:migrate`
+- Pull schema from DB: `npm run db:pull`
 - Open Drizzle Studio: `npm run db:studio`
 - Reset DB (dangerous): `npm run db:reset`
 
 Production Postgres runs on port 5432 via `postgres` service; dev DB runs on 5433 via `postgres-dev` profile.
-
 
 ## Available Scripts
 - `npm run dev` – Start Next.js with Turbopack
@@ -113,6 +108,8 @@ Database
 - `npm run db:dev-down` – Stop dev Postgres
 - `npm run db:push` – Apply schema to DB
 - `npm run db:generate` – Generate migration files
+- `npm run db:migrate` – Apply pending migrations
+- `npm run db:pull` – Introspect DB schema
 - `npm run db:studio` – Drizzle Studio
 - `npm run db:reset` – Drop and recreate tables
 
@@ -121,7 +118,6 @@ Docker
 - `npm run docker:up` – Start app + Postgres
 - `npm run docker:down` – Stop all containers
 - `npm run docker:logs` – Tail containers logs
-
 
 ## Project Structure
 ```
@@ -141,8 +137,7 @@ Notable files:
 - `docker-compose.yaml` – Services for app and databases
 - `.env.example` – Environment template
 
-
-## Docker (Dev & Prod)
+## Docker
 The `docker-compose.yaml` defines:
 - `postgres` – Production‑like DB on 5432
 - `postgres-dev` – Dev DB on 5433 (profile: `dev`)
@@ -161,7 +156,6 @@ npm run docker:logs
 npm run docker:down
 ```
 
-
 ## Deployment
 
 ### Option 1: Docker Compose (VPS/Server)
@@ -178,7 +172,6 @@ Production tips:
 - Prefer managed Postgres (RDS/Cloud SQL/etc.).
 - Consider Next.js `output: "standalone"` for smaller images.
 
-
 ## Additional Docs
 - `documentation/tech_stack_document.md`
 - `documentation/project_requirements_document.md`
@@ -187,6 +180,18 @@ Production tips:
 - `documentation/security_guideline_document.md`
 - `documentation/app_flow_document.md` and `documentation/app_flowchart.md`
 
+Official documentation:
+- Next.js: https://nextjs.org/docs
+- Drizzle ORM: https://orm.drizzle.team/docs/overview
+- Better Auth: https://www.better-auth.com/
+- Tailwind CSS: https://tailwindcss.com/docs
+- shadcn/ui: https://ui.shadcn.com/
+- Docker: https://docs.docker.com/
 
 ## Contributing
 Contributions welcome! Please open an issue or pull request on GitHub.
+
+## Troubleshooting
+- Port in use on 3000 or 5433: stop existing processes/containers or change ports.
+- Drizzle cannot connect: verify `DATABASE_URL` matches the running DB (5433 for dev, 5432 for prod).
+- Auth callbacks failing: ensure `BETTER_AUTH_URL` and `NEXT_PUBLIC_BETTER_AUTH_URL` point to your app URL.

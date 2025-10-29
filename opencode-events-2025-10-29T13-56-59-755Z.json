@@ -1,0 +1,1009 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-29T13:56:59.755Z",
+    "totalEvents": 39,
+    "config": {
+      "providerID": "openai",
+      "modelID": "gpt-5",
+      "sessionTitle": "Task-d568747d-5706-4c22-b91c-1dba07818d87-Attempt-1",
+      "prompt": "You are an AI assistant helping with coding tasks via Codespace SDK.\n\n**Current Repository Context:**\n- Repository: https://github.com/RafiulM/everything-app-starter\n- Current Branch: feature/improve-readme-NNq2V3ci\n- Execution Environment: Secure isolated Codespace container\n- GitHub CLI: Available and authenticated ✅\n\n**🎯 MANDATORY TASK MANAGEMENT WORKFLOW:**\n🚨 **YOU MUST FOLLOW THIS EXACT TASK WORKFLOW - NO EXCEPTIONS** 🚨\n\n**STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n**STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n**STEP 3: COMPLETE EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n```\n\n**CRITICAL WORKFLOW REQUIREMENT:**\n🚨 **YOU MUST ALWAYS COMMIT ALL CHANGES AND CREATE A PULL REQUEST** after completing ALL requested tasks! 🚨\n\n**MANDATORY Final Steps (DO NOT SKIP):**\n1. Complete ALL requested tasks first (implement all changes, fixes, or improvements)\n2. **COMMIT all changes** using git with a comprehensive commit message\n3. **PUSH the changes**\n4. **CREATE A PULL REQUEST** using GitHub CLI\n\n**GitHub CLI Instructions:**\n- Use `gh pr create --title \"Title\" --body \"Description\" --json url,number` to create PRs\n- You can also use `gh pr create --web` to open the PR creation page\n\n**Important Notes:**\n- You are running in a secure isolated environment for safety\n- The current branch (feature/improve-readme-NNq2V3ci) is already set up for you\n- You MUST push your changes AND create a PR - this is not optional\n- Work is incomplete without the final commit, push, and PR creation\n\nProvider: openai/gpt-5\n\n---\n\nUser Instructions:\nadd better readme "
+    }
+  },
+  "events": [
+    {
+      "type": "server.connected",
+      "properties": {},
+      "timestamp": "2025-10-29T13:55:59.759Z",
+      "eventNumber": 1
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a30410c82001TouXiRIUBpgJDd",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "user",
+          "time": {
+            "created": 1761746160770
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:00.775Z",
+      "eventNumber": 2
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a30410c83001XT2BJaWXihXyYe",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410c82001TouXiRIUBpgJDd",
+          "type": "text",
+          "text": "You are an AI assistant helping with coding tasks via Codespace SDK.\n\n**Current Repository Context:**\n- Repository: https://github.com/RafiulM/everything-app-starter\n- Current Branch: feature/improve-readme-NNq2V3ci\n- Execution Environment: Secure isolated Codespace container\n- GitHub CLI: Available and authenticated ✅\n\n**🎯 MANDATORY TASK MANAGEMENT WORKFLOW:**\n🚨 **YOU MUST FOLLOW THIS EXACT TASK WORKFLOW - NO EXCEPTIONS** 🚨\n\n**STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n**STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n**STEP 3: COMPLETE EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n```\n\n**CRITICAL WORKFLOW REQUIREMENT:**\n🚨 **YOU MUST ALWAYS COMMIT ALL CHANGES AND CREATE A PULL REQUEST** after completing ALL requested tasks! 🚨\n\n**MANDATORY Final Steps (DO NOT SKIP):**\n1. Complete ALL requested tasks first (implement all changes, fixes, or improvements)\n2. **COMMIT all changes** using git with a comprehensive commit message\n3. **PUSH the changes**\n4. **CREATE A PULL REQUEST** using GitHub CLI\n\n**GitHub CLI Instructions:**\n- Use `gh pr create --title \"Title\" --body \"Description\" --json url,number` to create PRs\n- You can also use `gh pr create --web` to open the PR creation page\n\n**Important Notes:**\n- You are running in a secure isolated environment for safety\n- The current branch (feature/improve-readme-NNq2V3ci) is already set up for you\n- You MUST push your changes AND create a PR - this is not optional\n- Work is incomplete without the final commit, push, and PR creation\n\nProvider: openai/gpt-5\n\n---\n\nUser Instructions:\nadd better readme "
+        }
+      },
+      "timestamp": "2025-10-29T13:56:00.775Z",
+      "eventNumber": 3
+    },
+    {
+      "type": "session.updated",
+      "properties": {
+        "info": {
+          "id": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "version": "0.15.10",
+          "projectID": "dd5208da5991392c6ce9d2b9216852fd418675eb",
+          "directory": "/workspace/repo",
+          "title": "Task-d568747d-5706-4c22-b91c-1dba07818d87-Attempt-1",
+          "time": {
+            "created": 1761746159747,
+            "updated": 1761746160775
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:00.777Z",
+      "eventNumber": 4
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "assistant",
+          "time": {
+            "created": 1761746160839
+          },
+          "system": [
+            "You are a coding agent running in the opencode, a terminal-based coding assistant. opencode is an open source project. You are expected to be precise, safe, and helpful.\n\nYour capabilities:\n- Receive user prompts and other context provided by the harness, such as files in the workspace.\n- Communicate with the user by streaming thinking & responses, and by making & updating plans.\n- Emit function calls to run terminal commands and apply edits. Depending on how this specific run is configured, you can request that these function calls be escalated to the user for approval before running. More on this in the \"Sandbox and approvals\" section.\n\nWithin this context, Codex refers to the open-source agentic coding interface (not the old Codex language model built by OpenAI).\n\n# How you work\n\n## Personality\n\nYour default personality and tone is concise, direct, and friendly. You communicate efficiently, always keeping the user clearly informed about ongoing actions without unnecessary detail. You always prioritize actionable guidance, clearly stating assumptions, environment prerequisites, and next steps. Unless explicitly asked, you avoid excessively verbose explanations about your work.\n\n## Responsiveness\n\n### Preamble messages\n\nBefore making tool calls, send a brief preamble to the user explaining what you’re about to do. When sending preamble messages, follow these principles and examples:\n\n- **Logically group related actions**: if you’re about to run several related commands, describe them together in one preamble rather than sending a separate note for each.\n- **Keep it concise**: be no more than 1-2 sentences (8–12 words for quick updates).\n- **Build on prior context**: if this is not your first tool call, use the preamble message to connect the dots with what’s been done so far and create a sense of momentum and clarity for the user to understand your next actions.\n- **Keep your tone light, friendly and curious**: add small touches of personality in preambles feel collaborative and engaging.\n\n**Examples:**\n- “I’ve explored the repo; now checking the API route definitions.”\n- “Next, I’ll edit the config and update the related tests.”\n- “I’m about to scaffold the CLI commands and helper functions.”\n- “Ok cool, so I’ve wrapped my head around the repo. Now digging into the API routes.”\n- “Config’s looking tidy. Next up is editing helpers to keep things in sync.”\n- “Finished poking at the DB gateway. I will now chase down error handling.”\n- “Alright, build pipeline order is interesting. Checking how it reports failures.”\n- “Spotted a clever caching util; now hunting where it gets used.”\n\n**Avoiding a preamble for every trivial read (e.g., `cat` a single file) unless it’s part of a larger grouped action.\n- Jumping straight into tool calls without explaining what’s about to happen.\n- Writing overly long or speculative preambles — focus on immediate, tangible next steps.\n\n## Planning\n\nYou have access to an `todowrite` tool which tracks steps and progress and\nrenders them to the user. Using the tool helps demonstrate that you've\nunderstood the task and convey how you're approaching it. Plans can help to make\ncomplex, ambiguous, or multi-phase work clearer and more collaborative for the\nuser. A good plan should break the task into meaningful, logically ordered steps\nthat are easy to verify as you go. Note that plans are not for padding out\nsimple work with filler steps or stating the obvious. Do not repeat the full\ncontents of the plan after a `todowrite` call — the harness already displays it. Instead, summarize the change made and highlight any important context or next step.\n\nUse a plan when:\n- The task is non-trivial and will require multiple actions over a long time horizon.\n- There are logical phases or dependencies where sequencing matters.\n- The work has ambiguity that benefits from outlining high-level goals.\n- You want intermediate checkpoints for feedback and validation.\n- When the user asked you to do more than one thing in a single prompt\n- The user has asked you to use the plan tool (aka \"TODOs\")\n- You generate additional steps while working, and plan to do them before yielding to the user\n\nSkip a plan when:\n- The task is simple and direct.\n- Breaking it down would only produce literal or trivial steps.\n\nPlanning steps are called \"steps\" in the tool, but really they're more like tasks or TODOs. As such they should be very concise descriptions of non-obvious work that an engineer might do like \"Write the API spec\", then \"Update the backend\", then \"Implement the frontend\". On the other hand, it's obvious that you'll usually have to \"Explore the codebase\" or \"Implement the changes\", so those are not worth tracking in your plan.\n\nIt may be the case that you complete all steps in your plan after a single pass of implementation. If this is the case, you can simply mark all the planned steps as completed. The content of your plan should not involve doing anything that you aren't capable of doing (i.e. don't try to test things that you can't test). Do not use plans for simple or single-step queries that you can just do or answer immediately.\n\n### Examples\n\n**High-quality plans**\n\nExample 1:\n\n1. Add CLI entry with file args\n2. Parse Markdown via CommonMark library\n3. Apply semantic HTML template\n4. Handle code blocks, images, links\n5. Add error handling for invalid files\n\nExample 2:\n\n1. Define CSS variables for colors\n2. Add toggle with localStorage state\n3. Refactor components to use variables\n4. Verify all views for readability\n5. Add smooth theme-change transition\n\nExample 3:\n\n1. Set up Node.js + WebSocket server\n2. Add join/leave broadcast events\n3. Implement messaging with timestamps\n4. Add usernames + mention highlighting\n5. Persist messages in lightweight DB\n6. Add typing indicators + unread count\n\n**Low-quality plans**\n\nExample 1:\n\n1. Create CLI tool\n2. Add Markdown parser\n3. Convert to HTML\n\nExample 2:\n\n1. Add dark mode toggle\n2. Save preference\n3. Make styles look good\n\nExample 3:\n\n1. Create single-file HTML game\n2. Run quick sanity check\n3. Summarize usage instructions\n\nIf you need to write a plan, only write high quality plans, not low quality ones.\n\n## Task execution\n\nYou are a coding agent. Please keep going until the query is completely resolved, before ending your turn and yielding back to the user. Only terminate your turn when you are sure that the problem is solved. Autonomously resolve the query to the best of your ability, using the tools available to you, before coming back to the user. Do NOT guess or make up an answer.\n\nYou MUST adhere to the following criteria when solving queries:\n- Working on the repo(s) in the current environment is allowed, even if they are proprietary.\n- Analyzing code for vulnerabilities is allowed.\n- Showing user code and tool call details is allowed.\n- Use the `edit` tool to edit files \n\nIf completing the user's task requires writing or modifying files, your code and final answer should follow these coding guidelines, though user instructions (i.e. AGENTS.md) may override these guidelines:\n\n- Fix the problem at the root cause rather than applying surface-level edits, when possible.\n- Avoid unneeded complexity in your solution.\n- Do not attempt to fix unrelated bugs or broken tests. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n- Update documentation as necessary.\n- Keep changes consistent with the style of the existing codebase. Changes should be minimal and focused on the task.\n- Use `git log` and `git blame` to search the history of the codebase if additional context is required.\n- NEVER add copyright or license headers unless specifically requested.\n- Do not waste tokens by re-reading files after calling `edit` on them. The tool call will fail if it didn't work. The same goes for making folders, deleting folders, etc.\n- Do not `git commit` your changes or create new git branches unless explicitly requested.\n- Do not add inline comments within code unless explicitly requested.\n- Do not use one-letter variable names unless explicitly requested.\n- NEVER output inline citations like \"【F:README.md†L5-L14】\" in your outputs. The CLI is not able to render these so they will just be broken in the UI. Instead, if you output valid filepaths, users will be able to click on them to open the files in their editor.\n\n## Testing your work\n\nIf the codebase has tests or the ability to build or run, you should use them to verify that your work is complete. Generally, your testing philosophy should be to start as specific as possible to the code you changed so that you can catch issues efficiently, then make your way to broader tests as you build confidence. If there's no test for the code you changed, and if the adjacent patterns in the codebases show that there's a logical place for you to add a test, you may do so. However, do not add tests to codebases with no tests, or where the patterns don't indicate so.\n\nOnce you're confident in correctness, use formatting commands to ensure that your code is well formatted. These commands can take time so you should run them on as precise a target as possible. If there are issues you can iterate up to 3 times to get formatting right, but if you still can't manage it's better to save the user time and present them a correct solution where you call out the formatting in your final message. If the codebase does not have a formatter configured, do not add one.\n\nFor all of testing, running, building, and formatting, do not attempt to fix unrelated bugs. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n\n## Sandbox and approvals\n\nThe Codex CLI harness supports several different sandboxing, and approval configurations that the user can choose from.\n\nFilesystem sandboxing prevents you from editing files without user approval. The options are:\n- *read-only*: You can only read files.\n- *workspace-write*: You can read files. You can write to files in your workspace folder, but not outside it.\n- *danger-full-access*: No filesystem sandboxing.\n\nNetwork sandboxing prevents you from accessing network without approval. Options are\n- *ON*\n- *OFF*\n\nApprovals are your mechanism to get user consent to perform more privileged actions. Although they introduce friction to the user because your work is paused until the user responds, you should leverage them to accomplish your important work. Do not let these settings or the sandbox deter you from attempting to accomplish the user's task. Approval options are\n- *untrusted*: The harness will escalate most commands for user approval, apart from a limited allowlist of safe \"read\" commands.\n- *on-failure*: The harness will allow all commands to run in the sandbox (if enabled), and failures will be escalated to the user for approval to run again without the sandbox.\n- *on-request*: Commands will be run in the sandbox by default, and you can specify in your tool call if you want to escalate a command to run without sandboxing. (Note that this mode is not always available. If it is, you'll see parameters for it in the `shell` command description.)\n- *never*: This is a non-interactive mode where you may NEVER ask the user for approval to run commands. Instead, you must always persist and work around constraints to solve the task for the user. You MUST do your utmost best to finish the task and validate your work before yielding. If this mode is pared with `danger-full-access`, take advantage of it to deliver the best outcome for the user. Further, in this mode, your default testing philosophy is overridden: Even if you don't see local patterns for testing, you may add tests and scripts to validate your work. Just remove them before yielding.\n\nWhen you are running with approvals `on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:\n- You need to run a command that writes to a directory that requires it (e.g. running tests that write to /tmp)\n- You need to run a GUI app (e.g., open/xdg-open/osascript) to open browsers or files.\n- You are running sandboxed and need to run a command that requires network access (e.g. installing packages)\n- If you run a command that is important to solving the user's query, but it fails because of sandboxing, rerun the command with approval.\n- You are about to take a potentially destructive action such as an `rm` or `git reset` that the user did not explicitly ask for\n- (For all of these, you should weigh alternative paths that do not require approval.)\n\nNote that when sandboxing is set to read-only, you'll need to request approval for any command that isn't a read.\n\nYou will be told what filesystem sandboxing, network sandboxing, and approval mode are active in a developer or user message. If you are not told about this, assume that you are running with workspace-write, network sandboxing ON, and approval on-failure.\n\n## Ambition vs. precision\n\nFor tasks that have no prior context (i.e. the user is starting something brand new), you should feel free to be ambitious and demonstrate creativity with your implementation.\n\nIf you're operating in an existing codebase, you should make sure you do exactly what the user asks with surgical precision. Treat the surrounding codebase with respect, and don't overstep (i.e. changing filenames or variables unnecessarily). You should balance being sufficiently ambitious and proactive when completing tasks of this nature.\n\nYou should use judicious initiative to decide on the right level of detail and complexity to deliver based on the user's needs. This means showing good judgment that you're capable of doing the right extras without gold-plating. This might be demonstrated by high-value, creative touches when scope of the task is vague; while being surgical and targeted when scope is tightly specified.\n\n## Sharing progress updates\n\nFor especially longer tasks that you work on (i.e. requiring many tool calls, or a plan with multiple steps), you should provide progress updates back to the user at reasonable intervals. These updates should be structured as a concise sentence or two (no more than 8-10 words long) recapping progress so far in plain language: this update demonstrates your understanding of what needs to be done, progress so far (i.e. files explores, subtasks complete), and where you're going next.\n\nBefore doing large chunks of work that may incur latency as experienced by the user (i.e. writing a new file), you should send a concise message to the user with an update indicating what you're about to do to ensure they know what you're spending time on. Don't start editing or writing large files before informing the user what you are doing and why.\n\nThe messages you send before tool calls should describe what is immediately about to be done next in very concise language. If there was previous work done, this preamble message should also include a note about the work done so far to bring the user along.\n\n## Presenting your work and final message\n\nYour final message should read naturally, like an update from a concise teammate. For casual conversation, brainstorming tasks, or quick questions from the user, respond in a friendly, conversational tone. You should ask questions, suggest ideas, and adapt to the user’s style. If you've finished a large amount of work, when describing what you've done to the user, you should follow the final answer formatting guidelines to communicate substantive changes. You don't need to add structured formatting for one-word answers, greetings, or purely conversational exchanges.\n\nYou can skip heavy formatting for single, simple actions or confirmations. In these cases, respond in plain sentences with any relevant next step or quick option. Reserve multi-section structured responses for results that need grouping or explanation.\n\nThe user is working on the same computer as you, and has access to your work. As\nsuch there's no need to show the full contents of large files you have already\nwritten unless the user explicitly asks for them. Similarly, if you've created\nor modified files using `edit`, there's no need to tell users to \"save the file\" or \"copy the code into a file\"—just reference the file path.\n\nIf there's something that you think you could help with as a logical next step, concisely ask the user if they want you to do so. Good examples of this are running tests, committing changes, or building out the next logical component. If there’s something that you couldn't do (even with approval) but that the user might want to do (such as verifying changes by running the app), include those instructions succinctly.\n\nBrevity is very important as a default. You should be very concise (i.e. no more than 10 lines), but can relax this requirement for tasks where additional detail and comprehensiveness is important for the user's understanding.\n\n### Final answer structure and style guidelines\n\nYou are producing plain text that will later be styled by the CLI. Follow these rules exactly. Formatting should make results easy to scan, but not feel mechanical. Use judgment to decide how much structure adds value.\n\n**Section Headers**\n- Use only when they improve clarity — they are not mandatory for every answer.\n- Choose descriptive names that fit the content\n- Keep headers short (1–3 words) and in `**Title Case**`. Always start headers with `**` and end with `**`\n- Leave no blank line before the first bullet under a header.\n- Section headers should only be used where they genuinely improve scanability; avoid fragmenting the answer.\n\n**Bullets**\n- Use `-` followed by a space for every bullet.\n- Bold the keyword, then colon + concise description.\n- Merge related points when possible; avoid a bullet for every trivial detail.\n- Keep bullets to one line unless breaking for clarity is unavoidable.\n- Group into short lists (4–6 bullets) ordered by importance.\n- Use consistent keyword phrasing and formatting across sections.\n\n**Monospace**\n- Wrap all commands, file paths, env vars, and code identifiers in backticks (`` `...` ``).\n- Apply to inline examples and to bullet keywords if the keyword itself is a literal file/command.\n- Never mix monospace and bold markers; choose one based on whether it’s a keyword (`**`) or inline code/path (`` ` ``).\n\n**Structure**\n- Place related bullets together; don’t mix unrelated concepts in the same section.\n- Order sections from general → specific → supporting info.\n- For subsections (e.g., “Binaries” under “Rust Workspace”), introduce with a bolded keyword bullet, then list items under it.\n- Match structure to complexity:\n  - Multi-part or detailed results → use clear headers and grouped bullets.\n  - Simple results → minimal headers, possibly just a short list or paragraph.\n\n**Tone**\n- Keep the voice collaborative and natural, like a coding partner handing off work.\n- Be concise and factual — no filler or conversational commentary and avoid unnecessary repetition\n- Use present tense and active voice (e.g., “Runs tests” not “This will run tests”).\n- Keep descriptions self-contained; don’t refer to “above” or “below”.\n- Use parallel structure in lists for consistency.\n\n**Don’t**\n- Don’t use literal words “bold” or “monospace” in the content.\n- Don’t nest bullets or create deep hierarchies.\n- Don’t output ANSI escape codes directly — the CLI renderer applies them.\n- Don’t cram unrelated keywords into a single bullet; split for clarity.\n- Don’t let keyword lists run long — wrap or reformat for scanability.\n\nGenerally, ensure your final answers adapt their shape and depth to the request. For example, answers to code explanations should have a precise, structured explanation with code references that answer the question directly. For tasks with a simple implementation, lead with the outcome and supplement only with what’s needed for clarity. Larger changes can be presented as a logical walkthrough of your approach, grouping related steps, explaining rationale where it adds value, and highlighting next actions to accelerate the user. Your answers should provide the right level of detail while being easily scannable.\n\nFor casual greetings, acknowledgements, or other one-off conversational messages that are not delivering substantive information or structured results, respond naturally without section headers or bullet formatting.\n",
+            "Here is some useful information about the environment you are running in:\n<env>\n  Working directory: /workspace/repo\n  Is directory a git repo: yes\n  Platform: linux\n  Today's date: Wed Oct 29 2025\n</env>\n<project>\n  app/\n\tapi/\n\t\tauth/\n\t\t\t[...all]/\n\t\t\t\troute.ts\n\tdashboard/\n\t\tdata.json\n\t\tlayout.tsx\n\t\tpage.tsx\n\t\ttheme.css\n\tsign-in/\n\t\tpage.tsx\n\tsign-up/\n\t\tpage.tsx\n\tfavicon.ico\n\tglobals.css\n\tlayout.tsx\n\tpage.tsx\ncomponents/\n\tui/\n\t\taccordion.tsx\n\t\talert-dialog.tsx\n\t\talert.tsx\n\t\taspect-ratio.tsx\n\t\tavatar.tsx\n\t\tbadge.tsx\n\t\tbreadcrumb.tsx\n\t\tbutton.tsx\n\t\tcalendar.tsx\n\t\tcard.tsx\n\t\tcarousel.tsx\n\t\tchart.tsx\n\t\tcheckbox.tsx\n\t\tcollapsible.tsx\n\t\tcommand.tsx\n\t\tcontext-menu.tsx\n\t\tdialog.tsx\n\t\tdrawer.tsx\n\t\tdropdown-menu.tsx\n\t\tform.tsx\n\t\thover-card.tsx\n\t\tinput-otp.tsx\n\t\tinput.tsx\n\t\tlabel.tsx\n\t\tmenubar.tsx\n\t\tnavigation-menu.tsx\n\t\tpagination.tsx\n\t\tpopover.tsx\n\t\tprogress.tsx\n\t\tradio-group.tsx\n\t\tresizable.tsx\n\t\tscroll-area.tsx\n\t\tselect.tsx\n\t\tseparator.tsx\n\t\tsheet.tsx\n\t\tsidebar.tsx\n\t\tskeleton.tsx\n\t\tslider.tsx\n\t\tsonner.tsx\n\t\tswitch.tsx\n\t\ttable.tsx\n\t\ttabs.tsx\n\t\ttextarea.tsx\n\t\ttoggle-group.tsx\n\t\ttoggle.tsx\n\t\ttooltip.tsx\n\tapp-sidebar.tsx\n\tauth-buttons.tsx\n\tchart-area-interactive.tsx\n\tdata-table.tsx\n\tnav-documents.tsx\n\tnav-main.tsx\n\tnav-secondary.tsx\n\tnav-user.tsx\n\tsection-cards.tsx\n\tsite-header.tsx\n\ttheme-provider.tsx\n\ttheme-toggle.tsx\ndb/\n\tschema/\n\t\tauth.ts\n\tindex.ts\ndocker/\n\tpostgres/\n\t\tinit.sql\ndocumentation/\n\ttasks/\n\t\timprove-readme-documentation_2025-10-29_13-55-11-488Z.json\n\tapp_flow_document.md\n\tapp_flowchart.md\n\tbackend_structure_document.md\n\tfrontend_guidelines_document.md\n\tproject_requirements_document.md\n\tsecurity_guideline_document.md\n\ttech_stack_document.md\ndrizzle/\n\tmeta/\n\t\t_journal.json\n\t\t0000_snapshot.json\n\t0000_overjoyed_morlun.sql\nhooks/\n\tuse-mobile.ts\nlib/\n\tauth-client.ts\n\tauth.ts\n\tutils.ts\npublic/\n\tcodeguide-logo.png\n\tfile.svg\n\tglobe.svg\n\tnext.svg\n\tvercel.svg\n\twindow.svg\n.dockerignore\n.env.example\n.gitignore\n.prettierrc\nCLAUDE.md\ncodeguide-backdrop.svg\ncomponents.json\ndocker-compose.yaml\nDockerfile\ndrizzle.config.ts\neslint.config.mjs\nnext.config.ts\nopencode.json\npackage-lock.json\npackage.json\npostcss.config.mjs\nREADME.md\ntsconfig.json\n</project>\n# Codespace Task Management Guide\n\n## Documentation Available\n\n📚 **Project Documentation**: Check the documentation files in this directory for project-specific setup instructions and guides.\n**Project Tasks**: Check the tasks directory in documentation/tasks for the list of tasks to be completed. Use the CLI commands below to interact with them.\n\n## MANDATORY Task Management Workflow\n\n🚨 **YOU MUST FOLLOW THIS EXACT WORKFLOW - NO EXCEPTIONS** 🚨\n\n### **STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n### **STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n### **STEP 3: COMPLETE OR CANCEL EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed, or cancel if you cannot complete it:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n# or\ntask-manager cancel-task <task_id> \"Reason for cancellation\"\n```\n\n## Task Files Location\n\n📁 **Task Data**: Your tasks are organized in the `documentation/tasks/` directory:\n- Task JSON files contain complete task information\n- Use ONLY the `task-manager` commands listed above\n- Follow the mandatory workflow sequence for each task\n\n## MANDATORY Task Workflow Sequence\n\n🔄 **For EACH individual task, you MUST follow this sequence:**\n\n1. 📋 **DISCOVER**: `task-manager list-tasks` (first time only)\n2. 🚀 **START**: `task-manager start-task <task_id>` (mark as in progress)\n3. 💻 **IMPLEMENT**: Do the actual coding/implementation work\n4. ✅ **COMPLETE**: `task-manager complete-task <task_id> \"What was done\"` (or cancel with `task-manager cancel-task <task_id> \"Reason\"`)\n5. 🔁 **REPEAT**: Go to next task (start from step 2)\n\n## Task Status Options\n\n- `pending` - Ready to work on\n- `in_progress` - Currently being worked on  \n- `completed` - Successfully finished\n- `blocked` - Cannot proceed (waiting for dependencies)\n- `cancelled` - No longer needed\n\n## CRITICAL WORKFLOW RULES\n\n❌ **NEVER skip** the `task-manager start-task` command\n❌ **NEVER skip** the `task-manager complete-task` command  (use `task-manager cancel-task` if a task is not planned, not required, or you must stop it)\n❌ **NEVER work on multiple tasks simultaneously**\n✅ **ALWAYS complete one task fully before starting the next**\n✅ **ALWAYS provide completion details in the complete command**\n✅ **ALWAYS follow the exact 3-step sequence: list → start → complete (or cancel if not required)**"
+          ],
+          "modelID": "gpt-5",
+          "providerID": "openai",
+          "mode": "build",
+          "path": {
+            "cwd": "/workspace/repo",
+            "root": "/workspace/repo"
+          },
+          "cost": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "reasoning": 0,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:00.846Z",
+      "eventNumber": 5
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041108e001r75fpRITQ8nAoz",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "step-start",
+          "snapshot": "54b65f26ca01211829fc776c9d07158cc5688fe8"
+        }
+      },
+      "timestamp": "2025-10-29T13:56:01.808Z",
+      "eventNumber": 6
+    },
+    {
+      "type": "session.updated",
+      "properties": {
+        "info": {
+          "id": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "version": "0.15.10",
+          "projectID": "dd5208da5991392c6ce9d2b9216852fd418675eb",
+          "directory": "/workspace/repo",
+          "title": "Implementing README improvements",
+          "time": {
+            "created": 1761746159747,
+            "updated": 1761746162073
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:02.073Z",
+      "eventNumber": 7
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a30411310001BD4jJyaE38IQp0",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "reasoning",
+          "text": "",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_05a320fb6250c3aa0069021cf2586c81958a5f1c60f1ab9943",
+              "reasoningEncryptedContent": null
+            }
+          },
+          "time": {
+            "start": 1761746162448,
+            "end": 1761746217856
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.868Z",
+      "eventNumber": 8
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.868Z",
+      "eventNumber": 9
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.868Z",
+      "eventNumber": 10
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.868Z",
+      "eventNumber": 11
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.893Z",
+      "eventNumber": 12
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.918Z",
+      "eventNumber": 13
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.918Z",
+      "eventNumber": 14
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:57.936Z",
+      "eventNumber": 15
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.073Z",
+      "eventNumber": 16
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.073Z",
+      "eventNumber": 17
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.073Z",
+      "eventNumber": 18
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item,",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.073Z",
+      "eventNumber": 19
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item, then",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.073Z",
+      "eventNumber": 20
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item, then start",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.074Z",
+      "eventNumber": 21
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item, then start it",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.075Z",
+      "eventNumber": 22
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item, then start it.",
+          "time": {
+            "start": 1761746217861
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.113Z",
+      "eventNumber": 23
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041eb85001XF5OoLMGy8RFU5",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "text",
+          "text": "I’ll list tasks to find the README improvement item, then start it.",
+          "time": {
+            "start": 1761746218559,
+            "end": 1761746218559
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_05a320fb6250c3aa0069021d29b9e48195a6d48f416b0b8534"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.564Z",
+      "eventNumber": 24
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "pending"
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.566Z",
+      "eventNumber": 25
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746218742
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.746Z",
+      "eventNumber": 26
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "metadata": {
+              "output": "",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746218768
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.770Z",
+      "eventNumber": 27
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "metadata": {
+              "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\n",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746218799
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.800Z",
+      "eventNumber": 28
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "metadata": {
+              "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\nℹ️  Task management directories ready\nℹ️  Fetching task group for codespace task: d568747d-5706-4c22-b91c-1dba07818d87\n",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746218799
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:58.801Z",
+      "eventNumber": 29
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "metadata": {
+              "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\nℹ️  Task management directories ready\nℹ️  Fetching task group for codespace task: d568747d-5706-4c22-b91c-1dba07818d87\n✅ Task group saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\n",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746219171
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.172Z",
+      "eventNumber": 30
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "metadata": {
+              "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\nℹ️  Task management directories ready\nℹ️  Fetching task group for codespace task: d568747d-5706-4c22-b91c-1dba07818d87\n✅ Task group saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\nℹ️  Task context created: /workspace/.task-context.json\nℹ️  Environment variables set in: /workspace/.current-task.env\n\n📋 Task Group Summary\n  🆔 Codespace Task ID: d568747d-5706-4c22-b91c-1dba07818d87\n  📝 Title: Draft_Comprehensive_README_md_Structure\n  📊 Project ID: unknown\n  📈 Total Tasks: 3\n  💾 Saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\n",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746219172
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.173Z",
+      "eventNumber": 31
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "running",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "metadata": {
+              "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\nℹ️  Task management directories ready\nℹ️  Fetching task group for codespace task: d568747d-5706-4c22-b91c-1dba07818d87\n✅ Task group saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\nℹ️  Task context created: /workspace/.task-context.json\nℹ️  Environment variables set in: /workspace/.current-task.env\n\n📋 Task Group Summary\n  🆔 Codespace Task ID: d568747d-5706-4c22-b91c-1dba07818d87\n  📝 Title: Draft_Comprehensive_README_md_Structure\n  📊 Project ID: unknown\n  📈 Total Tasks: 3\n  💾 Saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\n[\n  {\n    \"id\": \"b7279493-ba25-4fc7-8c2d-c6d5c359099c\",\n    \"ordinal\": 0,\n    \"description\": \"Outline and draft the structure for a new, comprehensive README.md file for the 'everything-app-starter' repository.\",\n    \"details\": \"Create a logical structure for the README.md including the following sections: Project Overview, Key Features, Technology Stack, Getting Started (Prerequisites, Installation, Environment Setup), Project Structure, Available Scripts, Deployment Instructions, and Additional Resources. Include placeholders for badges (e.g., license, build status) at the top. Reference the PRD and repository analysis to ensure all relevant topics are covered.\",\n    \"title\": \"Draft Comprehensive README.md Structure\",\n    \"priority\": \"high\"\n  },\n  {\n    \"id\": \"c82f5b75-59ba-462a-a97f-ce06dfe9cfde\",\n    \"ordinal\": 1,\n    \"description\": \"Fill in each section of the README.md with clear, concise, and accurate information based on the PRD, codebase, and best practices.\",\n    \"details\": \"Populate the drafted structure with detailed content: summarize the project, list features, describe the tech stack, provide step-by-step setup and installation instructions, document all required environment variables, explain the project structure, and detail deployment steps (including Docker and Vercel). Add shields.io badges for license and build status. Include links to official documentation for major technologies used. If a .env.example file does not exist, create one as a companion to the README.\",\n    \"title\": \"Populate README.md with Accurate Content\",\n    \"priority\": \"high\"\n  },\n  {\n    \"id\": \"50c0b45a-74f8-4006-b7dd-0b8b28153a60\",\n    \"ordinal\": 2,\n    \"description\": \"Test the accuracy and usability of the new README.md by following its instructions on a clean environment.\",\n    \"details\": \"Simulate a new developer onboarding experience: follow the 'Getting Started' and 'Deployment' instructions from scratch, using a fresh clone of the repository. Verify that all steps work as described, including environment setup, installation, running the app, and deploying via Docker. Note any missing or unclear steps and update the README.md as needed.\",\n    \"title\": \"Review and Validate README.md Instructions\",\n    \"priority\": \"high\"\n  }\n]\n",
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746219174
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.176Z",
+      "eventNumber": 32
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041ee40001ksjGS1vLk64Y9r",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "tool",
+          "callID": "call_FDaxmQBJfl3oKHDZYSSJBwcf",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "task-manager list-tasks",
+              "description": "Lists all available tasks"
+            },
+            "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\nℹ️  Task management directories ready\nℹ️  Fetching task group for codespace task: d568747d-5706-4c22-b91c-1dba07818d87\n✅ Task group saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\nℹ️  Task context created: /workspace/.task-context.json\nℹ️  Environment variables set in: /workspace/.current-task.env\n\n📋 Task Group Summary\n  🆔 Codespace Task ID: d568747d-5706-4c22-b91c-1dba07818d87\n  📝 Title: Draft_Comprehensive_README_md_Structure\n  📊 Project ID: unknown\n  📈 Total Tasks: 3\n  💾 Saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\n[\n  {\n    \"id\": \"b7279493-ba25-4fc7-8c2d-c6d5c359099c\",\n    \"ordinal\": 0,\n    \"description\": \"Outline and draft the structure for a new, comprehensive README.md file for the 'everything-app-starter' repository.\",\n    \"details\": \"Create a logical structure for the README.md including the following sections: Project Overview, Key Features, Technology Stack, Getting Started (Prerequisites, Installation, Environment Setup), Project Structure, Available Scripts, Deployment Instructions, and Additional Resources. Include placeholders for badges (e.g., license, build status) at the top. Reference the PRD and repository analysis to ensure all relevant topics are covered.\",\n    \"title\": \"Draft Comprehensive README.md Structure\",\n    \"priority\": \"high\"\n  },\n  {\n    \"id\": \"c82f5b75-59ba-462a-a97f-ce06dfe9cfde\",\n    \"ordinal\": 1,\n    \"description\": \"Fill in each section of the README.md with clear, concise, and accurate information based on the PRD, codebase, and best practices.\",\n    \"details\": \"Populate the drafted structure with detailed content: summarize the project, list features, describe the tech stack, provide step-by-step setup and installation instructions, document all required environment variables, explain the project structure, and detail deployment steps (including Docker and Vercel). Add shields.io badges for license and build status. Include links to official documentation for major technologies used. If a .env.example file does not exist, create one as a companion to the README.\",\n    \"title\": \"Populate README.md with Accurate Content\",\n    \"priority\": \"high\"\n  },\n  {\n    \"id\": \"50c0b45a-74f8-4006-b7dd-0b8b28153a60\",\n    \"ordinal\": 2,\n    \"description\": \"Test the accuracy and usability of the new README.md by following its instructions on a clean environment.\",\n    \"details\": \"Simulate a new developer onboarding experience: follow the 'Getting Started' and 'Deployment' instructions from scratch, using a fresh clone of the repository. Verify that all steps work as described, including environment setup, installation, running the app, and deploying via Docker. Note any missing or unclear steps and update the README.md as needed.\",\n    \"title\": \"Review and Validate README.md Instructions\",\n    \"priority\": \"high\"\n  }\n]\n",
+            "title": "task-manager list-tasks",
+            "metadata": {
+              "output": "ℹ️  🔄 Auto-fetching task group from CODESPACE_TASK_ID: d568747d-5706-4c22-b91c-1dba07818d87\nℹ️  Task management directories ready\nℹ️  Fetching task group for codespace task: d568747d-5706-4c22-b91c-1dba07818d87\n✅ Task group saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\nℹ️  Task context created: /workspace/.task-context.json\nℹ️  Environment variables set in: /workspace/.current-task.env\n\n📋 Task Group Summary\n  🆔 Codespace Task ID: d568747d-5706-4c22-b91c-1dba07818d87\n  📝 Title: Draft_Comprehensive_README_md_Structure\n  📊 Project ID: unknown\n  📈 Total Tasks: 3\n  💾 Saved to: /workspace/tasks/Draft_Comprehensive_README_md_Structure_tasks.json\n[\n  {\n    \"id\": \"b7279493-ba25-4fc7-8c2d-c6d5c359099c\",\n    \"ordinal\": 0,\n    \"description\": \"Outline and draft the structure for a new, comprehensive README.md file for the 'everything-app-starter' repository.\",\n    \"details\": \"Create a logical structure for the README.md including the following sections: Project Overview, Key Features, Technology Stack, Getting Started (Prerequisites, Installation, Environment Setup), Project Structure, Available Scripts, Deployment Instructions, and Additional Resources. Include placeholders for badges (e.g., license, build status) at the top. Reference the PRD and repository analysis to ensure all relevant topics are covered.\",\n    \"title\": \"Draft Comprehensive README.md Structure\",\n    \"priority\": \"high\"\n  },\n  {\n    \"id\": \"c82f5b75-59ba-462a-a97f-ce06dfe9cfde\",\n    \"ordinal\": 1,\n    \"description\": \"Fill in each section of the README.md with clear, concise, and accurate information based on the PRD, codebase, and best practices.\",\n    \"details\": \"Populate the drafted structure with detailed content: summarize the project, list features, describe the tech stack, provide step-by-step setup and installation instructions, document all required environment variables, explain the project structure, and detail deployment steps (including Docker and Vercel). Add shields.io badges for license and build status. Include links to official documentation for major technologies used. If a .env.example file does not exist, create one as a companion to the README.\",\n    \"title\": \"Populate README.md with Accurate Content\",\n    \"priority\": \"high\"\n  },\n  {\n    \"id\": \"50c0b45a-74f8-4006-b7dd-0b8b28153a60\",\n    \"ordinal\": 2,\n    \"description\": \"Test the accuracy and usability of the new README.md by following its instructions on a clean environment.\",\n    \"details\": \"Simulate a new developer onboarding experience: follow the 'Getting Started' and 'Deployment' instructions from scratch, using a fresh clone of the repository. Verify that all steps work as described, including environment setup, installation, running the app, and deploying via Docker. Note any missing or unclear steps and update the README.md as needed.\",\n    \"title\": \"Review and Validate README.md Instructions\",\n    \"priority\": \"high\"\n  }\n]\n",
+              "exit": 0,
+              "description": "Lists all available tasks"
+            },
+            "time": {
+              "start": 1761746218742,
+              "end": 1761746219224
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_05a320fb6250c3aa0069021d2a4150819585703911a26362e3"
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.226Z",
+      "eventNumber": 33
+    },
+    {
+      "type": "message.part.updated",
+      "properties": {
+        "part": {
+          "id": "prt_a3041f0d9001p1zYt1e9BftHKL",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "messageID": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "type": "step-finish",
+          "snapshot": "54b65f26ca01211829fc776c9d07158cc5688fe8",
+          "cost": 0.03676625,
+          "tokens": {
+            "input": 12605,
+            "output": 2101,
+            "reasoning": 2048,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.230Z",
+      "eventNumber": 34
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "assistant",
+          "time": {
+            "created": 1761746160839
+          },
+          "system": [
+            "You are a coding agent running in the opencode, a terminal-based coding assistant. opencode is an open source project. You are expected to be precise, safe, and helpful.\n\nYour capabilities:\n- Receive user prompts and other context provided by the harness, such as files in the workspace.\n- Communicate with the user by streaming thinking & responses, and by making & updating plans.\n- Emit function calls to run terminal commands and apply edits. Depending on how this specific run is configured, you can request that these function calls be escalated to the user for approval before running. More on this in the \"Sandbox and approvals\" section.\n\nWithin this context, Codex refers to the open-source agentic coding interface (not the old Codex language model built by OpenAI).\n\n# How you work\n\n## Personality\n\nYour default personality and tone is concise, direct, and friendly. You communicate efficiently, always keeping the user clearly informed about ongoing actions without unnecessary detail. You always prioritize actionable guidance, clearly stating assumptions, environment prerequisites, and next steps. Unless explicitly asked, you avoid excessively verbose explanations about your work.\n\n## Responsiveness\n\n### Preamble messages\n\nBefore making tool calls, send a brief preamble to the user explaining what you’re about to do. When sending preamble messages, follow these principles and examples:\n\n- **Logically group related actions**: if you’re about to run several related commands, describe them together in one preamble rather than sending a separate note for each.\n- **Keep it concise**: be no more than 1-2 sentences (8–12 words for quick updates).\n- **Build on prior context**: if this is not your first tool call, use the preamble message to connect the dots with what’s been done so far and create a sense of momentum and clarity for the user to understand your next actions.\n- **Keep your tone light, friendly and curious**: add small touches of personality in preambles feel collaborative and engaging.\n\n**Examples:**\n- “I’ve explored the repo; now checking the API route definitions.”\n- “Next, I’ll edit the config and update the related tests.”\n- “I’m about to scaffold the CLI commands and helper functions.”\n- “Ok cool, so I’ve wrapped my head around the repo. Now digging into the API routes.”\n- “Config’s looking tidy. Next up is editing helpers to keep things in sync.”\n- “Finished poking at the DB gateway. I will now chase down error handling.”\n- “Alright, build pipeline order is interesting. Checking how it reports failures.”\n- “Spotted a clever caching util; now hunting where it gets used.”\n\n**Avoiding a preamble for every trivial read (e.g., `cat` a single file) unless it’s part of a larger grouped action.\n- Jumping straight into tool calls without explaining what’s about to happen.\n- Writing overly long or speculative preambles — focus on immediate, tangible next steps.\n\n## Planning\n\nYou have access to an `todowrite` tool which tracks steps and progress and\nrenders them to the user. Using the tool helps demonstrate that you've\nunderstood the task and convey how you're approaching it. Plans can help to make\ncomplex, ambiguous, or multi-phase work clearer and more collaborative for the\nuser. A good plan should break the task into meaningful, logically ordered steps\nthat are easy to verify as you go. Note that plans are not for padding out\nsimple work with filler steps or stating the obvious. Do not repeat the full\ncontents of the plan after a `todowrite` call — the harness already displays it. Instead, summarize the change made and highlight any important context or next step.\n\nUse a plan when:\n- The task is non-trivial and will require multiple actions over a long time horizon.\n- There are logical phases or dependencies where sequencing matters.\n- The work has ambiguity that benefits from outlining high-level goals.\n- You want intermediate checkpoints for feedback and validation.\n- When the user asked you to do more than one thing in a single prompt\n- The user has asked you to use the plan tool (aka \"TODOs\")\n- You generate additional steps while working, and plan to do them before yielding to the user\n\nSkip a plan when:\n- The task is simple and direct.\n- Breaking it down would only produce literal or trivial steps.\n\nPlanning steps are called \"steps\" in the tool, but really they're more like tasks or TODOs. As such they should be very concise descriptions of non-obvious work that an engineer might do like \"Write the API spec\", then \"Update the backend\", then \"Implement the frontend\". On the other hand, it's obvious that you'll usually have to \"Explore the codebase\" or \"Implement the changes\", so those are not worth tracking in your plan.\n\nIt may be the case that you complete all steps in your plan after a single pass of implementation. If this is the case, you can simply mark all the planned steps as completed. The content of your plan should not involve doing anything that you aren't capable of doing (i.e. don't try to test things that you can't test). Do not use plans for simple or single-step queries that you can just do or answer immediately.\n\n### Examples\n\n**High-quality plans**\n\nExample 1:\n\n1. Add CLI entry with file args\n2. Parse Markdown via CommonMark library\n3. Apply semantic HTML template\n4. Handle code blocks, images, links\n5. Add error handling for invalid files\n\nExample 2:\n\n1. Define CSS variables for colors\n2. Add toggle with localStorage state\n3. Refactor components to use variables\n4. Verify all views for readability\n5. Add smooth theme-change transition\n\nExample 3:\n\n1. Set up Node.js + WebSocket server\n2. Add join/leave broadcast events\n3. Implement messaging with timestamps\n4. Add usernames + mention highlighting\n5. Persist messages in lightweight DB\n6. Add typing indicators + unread count\n\n**Low-quality plans**\n\nExample 1:\n\n1. Create CLI tool\n2. Add Markdown parser\n3. Convert to HTML\n\nExample 2:\n\n1. Add dark mode toggle\n2. Save preference\n3. Make styles look good\n\nExample 3:\n\n1. Create single-file HTML game\n2. Run quick sanity check\n3. Summarize usage instructions\n\nIf you need to write a plan, only write high quality plans, not low quality ones.\n\n## Task execution\n\nYou are a coding agent. Please keep going until the query is completely resolved, before ending your turn and yielding back to the user. Only terminate your turn when you are sure that the problem is solved. Autonomously resolve the query to the best of your ability, using the tools available to you, before coming back to the user. Do NOT guess or make up an answer.\n\nYou MUST adhere to the following criteria when solving queries:\n- Working on the repo(s) in the current environment is allowed, even if they are proprietary.\n- Analyzing code for vulnerabilities is allowed.\n- Showing user code and tool call details is allowed.\n- Use the `edit` tool to edit files \n\nIf completing the user's task requires writing or modifying files, your code and final answer should follow these coding guidelines, though user instructions (i.e. AGENTS.md) may override these guidelines:\n\n- Fix the problem at the root cause rather than applying surface-level edits, when possible.\n- Avoid unneeded complexity in your solution.\n- Do not attempt to fix unrelated bugs or broken tests. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n- Update documentation as necessary.\n- Keep changes consistent with the style of the existing codebase. Changes should be minimal and focused on the task.\n- Use `git log` and `git blame` to search the history of the codebase if additional context is required.\n- NEVER add copyright or license headers unless specifically requested.\n- Do not waste tokens by re-reading files after calling `edit` on them. The tool call will fail if it didn't work. The same goes for making folders, deleting folders, etc.\n- Do not `git commit` your changes or create new git branches unless explicitly requested.\n- Do not add inline comments within code unless explicitly requested.\n- Do not use one-letter variable names unless explicitly requested.\n- NEVER output inline citations like \"【F:README.md†L5-L14】\" in your outputs. The CLI is not able to render these so they will just be broken in the UI. Instead, if you output valid filepaths, users will be able to click on them to open the files in their editor.\n\n## Testing your work\n\nIf the codebase has tests or the ability to build or run, you should use them to verify that your work is complete. Generally, your testing philosophy should be to start as specific as possible to the code you changed so that you can catch issues efficiently, then make your way to broader tests as you build confidence. If there's no test for the code you changed, and if the adjacent patterns in the codebases show that there's a logical place for you to add a test, you may do so. However, do not add tests to codebases with no tests, or where the patterns don't indicate so.\n\nOnce you're confident in correctness, use formatting commands to ensure that your code is well formatted. These commands can take time so you should run them on as precise a target as possible. If there are issues you can iterate up to 3 times to get formatting right, but if you still can't manage it's better to save the user time and present them a correct solution where you call out the formatting in your final message. If the codebase does not have a formatter configured, do not add one.\n\nFor all of testing, running, building, and formatting, do not attempt to fix unrelated bugs. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n\n## Sandbox and approvals\n\nThe Codex CLI harness supports several different sandboxing, and approval configurations that the user can choose from.\n\nFilesystem sandboxing prevents you from editing files without user approval. The options are:\n- *read-only*: You can only read files.\n- *workspace-write*: You can read files. You can write to files in your workspace folder, but not outside it.\n- *danger-full-access*: No filesystem sandboxing.\n\nNetwork sandboxing prevents you from accessing network without approval. Options are\n- *ON*\n- *OFF*\n\nApprovals are your mechanism to get user consent to perform more privileged actions. Although they introduce friction to the user because your work is paused until the user responds, you should leverage them to accomplish your important work. Do not let these settings or the sandbox deter you from attempting to accomplish the user's task. Approval options are\n- *untrusted*: The harness will escalate most commands for user approval, apart from a limited allowlist of safe \"read\" commands.\n- *on-failure*: The harness will allow all commands to run in the sandbox (if enabled), and failures will be escalated to the user for approval to run again without the sandbox.\n- *on-request*: Commands will be run in the sandbox by default, and you can specify in your tool call if you want to escalate a command to run without sandboxing. (Note that this mode is not always available. If it is, you'll see parameters for it in the `shell` command description.)\n- *never*: This is a non-interactive mode where you may NEVER ask the user for approval to run commands. Instead, you must always persist and work around constraints to solve the task for the user. You MUST do your utmost best to finish the task and validate your work before yielding. If this mode is pared with `danger-full-access`, take advantage of it to deliver the best outcome for the user. Further, in this mode, your default testing philosophy is overridden: Even if you don't see local patterns for testing, you may add tests and scripts to validate your work. Just remove them before yielding.\n\nWhen you are running with approvals `on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:\n- You need to run a command that writes to a directory that requires it (e.g. running tests that write to /tmp)\n- You need to run a GUI app (e.g., open/xdg-open/osascript) to open browsers or files.\n- You are running sandboxed and need to run a command that requires network access (e.g. installing packages)\n- If you run a command that is important to solving the user's query, but it fails because of sandboxing, rerun the command with approval.\n- You are about to take a potentially destructive action such as an `rm` or `git reset` that the user did not explicitly ask for\n- (For all of these, you should weigh alternative paths that do not require approval.)\n\nNote that when sandboxing is set to read-only, you'll need to request approval for any command that isn't a read.\n\nYou will be told what filesystem sandboxing, network sandboxing, and approval mode are active in a developer or user message. If you are not told about this, assume that you are running with workspace-write, network sandboxing ON, and approval on-failure.\n\n## Ambition vs. precision\n\nFor tasks that have no prior context (i.e. the user is starting something brand new), you should feel free to be ambitious and demonstrate creativity with your implementation.\n\nIf you're operating in an existing codebase, you should make sure you do exactly what the user asks with surgical precision. Treat the surrounding codebase with respect, and don't overstep (i.e. changing filenames or variables unnecessarily). You should balance being sufficiently ambitious and proactive when completing tasks of this nature.\n\nYou should use judicious initiative to decide on the right level of detail and complexity to deliver based on the user's needs. This means showing good judgment that you're capable of doing the right extras without gold-plating. This might be demonstrated by high-value, creative touches when scope of the task is vague; while being surgical and targeted when scope is tightly specified.\n\n## Sharing progress updates\n\nFor especially longer tasks that you work on (i.e. requiring many tool calls, or a plan with multiple steps), you should provide progress updates back to the user at reasonable intervals. These updates should be structured as a concise sentence or two (no more than 8-10 words long) recapping progress so far in plain language: this update demonstrates your understanding of what needs to be done, progress so far (i.e. files explores, subtasks complete), and where you're going next.\n\nBefore doing large chunks of work that may incur latency as experienced by the user (i.e. writing a new file), you should send a concise message to the user with an update indicating what you're about to do to ensure they know what you're spending time on. Don't start editing or writing large files before informing the user what you are doing and why.\n\nThe messages you send before tool calls should describe what is immediately about to be done next in very concise language. If there was previous work done, this preamble message should also include a note about the work done so far to bring the user along.\n\n## Presenting your work and final message\n\nYour final message should read naturally, like an update from a concise teammate. For casual conversation, brainstorming tasks, or quick questions from the user, respond in a friendly, conversational tone. You should ask questions, suggest ideas, and adapt to the user’s style. If you've finished a large amount of work, when describing what you've done to the user, you should follow the final answer formatting guidelines to communicate substantive changes. You don't need to add structured formatting for one-word answers, greetings, or purely conversational exchanges.\n\nYou can skip heavy formatting for single, simple actions or confirmations. In these cases, respond in plain sentences with any relevant next step or quick option. Reserve multi-section structured responses for results that need grouping or explanation.\n\nThe user is working on the same computer as you, and has access to your work. As\nsuch there's no need to show the full contents of large files you have already\nwritten unless the user explicitly asks for them. Similarly, if you've created\nor modified files using `edit`, there's no need to tell users to \"save the file\" or \"copy the code into a file\"—just reference the file path.\n\nIf there's something that you think you could help with as a logical next step, concisely ask the user if they want you to do so. Good examples of this are running tests, committing changes, or building out the next logical component. If there’s something that you couldn't do (even with approval) but that the user might want to do (such as verifying changes by running the app), include those instructions succinctly.\n\nBrevity is very important as a default. You should be very concise (i.e. no more than 10 lines), but can relax this requirement for tasks where additional detail and comprehensiveness is important for the user's understanding.\n\n### Final answer structure and style guidelines\n\nYou are producing plain text that will later be styled by the CLI. Follow these rules exactly. Formatting should make results easy to scan, but not feel mechanical. Use judgment to decide how much structure adds value.\n\n**Section Headers**\n- Use only when they improve clarity — they are not mandatory for every answer.\n- Choose descriptive names that fit the content\n- Keep headers short (1–3 words) and in `**Title Case**`. Always start headers with `**` and end with `**`\n- Leave no blank line before the first bullet under a header.\n- Section headers should only be used where they genuinely improve scanability; avoid fragmenting the answer.\n\n**Bullets**\n- Use `-` followed by a space for every bullet.\n- Bold the keyword, then colon + concise description.\n- Merge related points when possible; avoid a bullet for every trivial detail.\n- Keep bullets to one line unless breaking for clarity is unavoidable.\n- Group into short lists (4–6 bullets) ordered by importance.\n- Use consistent keyword phrasing and formatting across sections.\n\n**Monospace**\n- Wrap all commands, file paths, env vars, and code identifiers in backticks (`` `...` ``).\n- Apply to inline examples and to bullet keywords if the keyword itself is a literal file/command.\n- Never mix monospace and bold markers; choose one based on whether it’s a keyword (`**`) or inline code/path (`` ` ``).\n\n**Structure**\n- Place related bullets together; don’t mix unrelated concepts in the same section.\n- Order sections from general → specific → supporting info.\n- For subsections (e.g., “Binaries” under “Rust Workspace”), introduce with a bolded keyword bullet, then list items under it.\n- Match structure to complexity:\n  - Multi-part or detailed results → use clear headers and grouped bullets.\n  - Simple results → minimal headers, possibly just a short list or paragraph.\n\n**Tone**\n- Keep the voice collaborative and natural, like a coding partner handing off work.\n- Be concise and factual — no filler or conversational commentary and avoid unnecessary repetition\n- Use present tense and active voice (e.g., “Runs tests” not “This will run tests”).\n- Keep descriptions self-contained; don’t refer to “above” or “below”.\n- Use parallel structure in lists for consistency.\n\n**Don’t**\n- Don’t use literal words “bold” or “monospace” in the content.\n- Don’t nest bullets or create deep hierarchies.\n- Don’t output ANSI escape codes directly — the CLI renderer applies them.\n- Don’t cram unrelated keywords into a single bullet; split for clarity.\n- Don’t let keyword lists run long — wrap or reformat for scanability.\n\nGenerally, ensure your final answers adapt their shape and depth to the request. For example, answers to code explanations should have a precise, structured explanation with code references that answer the question directly. For tasks with a simple implementation, lead with the outcome and supplement only with what’s needed for clarity. Larger changes can be presented as a logical walkthrough of your approach, grouping related steps, explaining rationale where it adds value, and highlighting next actions to accelerate the user. Your answers should provide the right level of detail while being easily scannable.\n\nFor casual greetings, acknowledgements, or other one-off conversational messages that are not delivering substantive information or structured results, respond naturally without section headers or bullet formatting.\n",
+            "Here is some useful information about the environment you are running in:\n<env>\n  Working directory: /workspace/repo\n  Is directory a git repo: yes\n  Platform: linux\n  Today's date: Wed Oct 29 2025\n</env>\n<project>\n  app/\n\tapi/\n\t\tauth/\n\t\t\t[...all]/\n\t\t\t\troute.ts\n\tdashboard/\n\t\tdata.json\n\t\tlayout.tsx\n\t\tpage.tsx\n\t\ttheme.css\n\tsign-in/\n\t\tpage.tsx\n\tsign-up/\n\t\tpage.tsx\n\tfavicon.ico\n\tglobals.css\n\tlayout.tsx\n\tpage.tsx\ncomponents/\n\tui/\n\t\taccordion.tsx\n\t\talert-dialog.tsx\n\t\talert.tsx\n\t\taspect-ratio.tsx\n\t\tavatar.tsx\n\t\tbadge.tsx\n\t\tbreadcrumb.tsx\n\t\tbutton.tsx\n\t\tcalendar.tsx\n\t\tcard.tsx\n\t\tcarousel.tsx\n\t\tchart.tsx\n\t\tcheckbox.tsx\n\t\tcollapsible.tsx\n\t\tcommand.tsx\n\t\tcontext-menu.tsx\n\t\tdialog.tsx\n\t\tdrawer.tsx\n\t\tdropdown-menu.tsx\n\t\tform.tsx\n\t\thover-card.tsx\n\t\tinput-otp.tsx\n\t\tinput.tsx\n\t\tlabel.tsx\n\t\tmenubar.tsx\n\t\tnavigation-menu.tsx\n\t\tpagination.tsx\n\t\tpopover.tsx\n\t\tprogress.tsx\n\t\tradio-group.tsx\n\t\tresizable.tsx\n\t\tscroll-area.tsx\n\t\tselect.tsx\n\t\tseparator.tsx\n\t\tsheet.tsx\n\t\tsidebar.tsx\n\t\tskeleton.tsx\n\t\tslider.tsx\n\t\tsonner.tsx\n\t\tswitch.tsx\n\t\ttable.tsx\n\t\ttabs.tsx\n\t\ttextarea.tsx\n\t\ttoggle-group.tsx\n\t\ttoggle.tsx\n\t\ttooltip.tsx\n\tapp-sidebar.tsx\n\tauth-buttons.tsx\n\tchart-area-interactive.tsx\n\tdata-table.tsx\n\tnav-documents.tsx\n\tnav-main.tsx\n\tnav-secondary.tsx\n\tnav-user.tsx\n\tsection-cards.tsx\n\tsite-header.tsx\n\ttheme-provider.tsx\n\ttheme-toggle.tsx\ndb/\n\tschema/\n\t\tauth.ts\n\tindex.ts\ndocker/\n\tpostgres/\n\t\tinit.sql\ndocumentation/\n\ttasks/\n\t\timprove-readme-documentation_2025-10-29_13-55-11-488Z.json\n\tapp_flow_document.md\n\tapp_flowchart.md\n\tbackend_structure_document.md\n\tfrontend_guidelines_document.md\n\tproject_requirements_document.md\n\tsecurity_guideline_document.md\n\ttech_stack_document.md\ndrizzle/\n\tmeta/\n\t\t_journal.json\n\t\t0000_snapshot.json\n\t0000_overjoyed_morlun.sql\nhooks/\n\tuse-mobile.ts\nlib/\n\tauth-client.ts\n\tauth.ts\n\tutils.ts\npublic/\n\tcodeguide-logo.png\n\tfile.svg\n\tglobe.svg\n\tnext.svg\n\tvercel.svg\n\twindow.svg\n.dockerignore\n.env.example\n.gitignore\n.prettierrc\nCLAUDE.md\ncodeguide-backdrop.svg\ncomponents.json\ndocker-compose.yaml\nDockerfile\ndrizzle.config.ts\neslint.config.mjs\nnext.config.ts\nopencode.json\npackage-lock.json\npackage.json\npostcss.config.mjs\nREADME.md\ntsconfig.json\n</project>\n# Codespace Task Management Guide\n\n## Documentation Available\n\n📚 **Project Documentation**: Check the documentation files in this directory for project-specific setup instructions and guides.\n**Project Tasks**: Check the tasks directory in documentation/tasks for the list of tasks to be completed. Use the CLI commands below to interact with them.\n\n## MANDATORY Task Management Workflow\n\n🚨 **YOU MUST FOLLOW THIS EXACT WORKFLOW - NO EXCEPTIONS** 🚨\n\n### **STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n### **STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n### **STEP 3: COMPLETE OR CANCEL EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed, or cancel if you cannot complete it:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n# or\ntask-manager cancel-task <task_id> \"Reason for cancellation\"\n```\n\n## Task Files Location\n\n📁 **Task Data**: Your tasks are organized in the `documentation/tasks/` directory:\n- Task JSON files contain complete task information\n- Use ONLY the `task-manager` commands listed above\n- Follow the mandatory workflow sequence for each task\n\n## MANDATORY Task Workflow Sequence\n\n🔄 **For EACH individual task, you MUST follow this sequence:**\n\n1. 📋 **DISCOVER**: `task-manager list-tasks` (first time only)\n2. 🚀 **START**: `task-manager start-task <task_id>` (mark as in progress)\n3. 💻 **IMPLEMENT**: Do the actual coding/implementation work\n4. ✅ **COMPLETE**: `task-manager complete-task <task_id> \"What was done\"` (or cancel with `task-manager cancel-task <task_id> \"Reason\"`)\n5. 🔁 **REPEAT**: Go to next task (start from step 2)\n\n## Task Status Options\n\n- `pending` - Ready to work on\n- `in_progress` - Currently being worked on  \n- `completed` - Successfully finished\n- `blocked` - Cannot proceed (waiting for dependencies)\n- `cancelled` - No longer needed\n\n## CRITICAL WORKFLOW RULES\n\n❌ **NEVER skip** the `task-manager start-task` command\n❌ **NEVER skip** the `task-manager complete-task` command  (use `task-manager cancel-task` if a task is not planned, not required, or you must stop it)\n❌ **NEVER work on multiple tasks simultaneously**\n✅ **ALWAYS complete one task fully before starting the next**\n✅ **ALWAYS provide completion details in the complete command**\n✅ **ALWAYS follow the exact 3-step sequence: list → start → complete (or cancel if not required)**"
+          ],
+          "modelID": "gpt-5",
+          "providerID": "openai",
+          "mode": "build",
+          "path": {
+            "cwd": "/workspace/repo",
+            "root": "/workspace/repo"
+          },
+          "cost": 0.03676625,
+          "tokens": {
+            "input": 12605,
+            "output": 2101,
+            "reasoning": 2048,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.230Z",
+      "eventNumber": 35
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "assistant",
+          "time": {
+            "created": 1761746160839,
+            "completed": 1761746219232
+          },
+          "system": [
+            "You are a coding agent running in the opencode, a terminal-based coding assistant. opencode is an open source project. You are expected to be precise, safe, and helpful.\n\nYour capabilities:\n- Receive user prompts and other context provided by the harness, such as files in the workspace.\n- Communicate with the user by streaming thinking & responses, and by making & updating plans.\n- Emit function calls to run terminal commands and apply edits. Depending on how this specific run is configured, you can request that these function calls be escalated to the user for approval before running. More on this in the \"Sandbox and approvals\" section.\n\nWithin this context, Codex refers to the open-source agentic coding interface (not the old Codex language model built by OpenAI).\n\n# How you work\n\n## Personality\n\nYour default personality and tone is concise, direct, and friendly. You communicate efficiently, always keeping the user clearly informed about ongoing actions without unnecessary detail. You always prioritize actionable guidance, clearly stating assumptions, environment prerequisites, and next steps. Unless explicitly asked, you avoid excessively verbose explanations about your work.\n\n## Responsiveness\n\n### Preamble messages\n\nBefore making tool calls, send a brief preamble to the user explaining what you’re about to do. When sending preamble messages, follow these principles and examples:\n\n- **Logically group related actions**: if you’re about to run several related commands, describe them together in one preamble rather than sending a separate note for each.\n- **Keep it concise**: be no more than 1-2 sentences (8–12 words for quick updates).\n- **Build on prior context**: if this is not your first tool call, use the preamble message to connect the dots with what’s been done so far and create a sense of momentum and clarity for the user to understand your next actions.\n- **Keep your tone light, friendly and curious**: add small touches of personality in preambles feel collaborative and engaging.\n\n**Examples:**\n- “I’ve explored the repo; now checking the API route definitions.”\n- “Next, I’ll edit the config and update the related tests.”\n- “I’m about to scaffold the CLI commands and helper functions.”\n- “Ok cool, so I’ve wrapped my head around the repo. Now digging into the API routes.”\n- “Config’s looking tidy. Next up is editing helpers to keep things in sync.”\n- “Finished poking at the DB gateway. I will now chase down error handling.”\n- “Alright, build pipeline order is interesting. Checking how it reports failures.”\n- “Spotted a clever caching util; now hunting where it gets used.”\n\n**Avoiding a preamble for every trivial read (e.g., `cat` a single file) unless it’s part of a larger grouped action.\n- Jumping straight into tool calls without explaining what’s about to happen.\n- Writing overly long or speculative preambles — focus on immediate, tangible next steps.\n\n## Planning\n\nYou have access to an `todowrite` tool which tracks steps and progress and\nrenders them to the user. Using the tool helps demonstrate that you've\nunderstood the task and convey how you're approaching it. Plans can help to make\ncomplex, ambiguous, or multi-phase work clearer and more collaborative for the\nuser. A good plan should break the task into meaningful, logically ordered steps\nthat are easy to verify as you go. Note that plans are not for padding out\nsimple work with filler steps or stating the obvious. Do not repeat the full\ncontents of the plan after a `todowrite` call — the harness already displays it. Instead, summarize the change made and highlight any important context or next step.\n\nUse a plan when:\n- The task is non-trivial and will require multiple actions over a long time horizon.\n- There are logical phases or dependencies where sequencing matters.\n- The work has ambiguity that benefits from outlining high-level goals.\n- You want intermediate checkpoints for feedback and validation.\n- When the user asked you to do more than one thing in a single prompt\n- The user has asked you to use the plan tool (aka \"TODOs\")\n- You generate additional steps while working, and plan to do them before yielding to the user\n\nSkip a plan when:\n- The task is simple and direct.\n- Breaking it down would only produce literal or trivial steps.\n\nPlanning steps are called \"steps\" in the tool, but really they're more like tasks or TODOs. As such they should be very concise descriptions of non-obvious work that an engineer might do like \"Write the API spec\", then \"Update the backend\", then \"Implement the frontend\". On the other hand, it's obvious that you'll usually have to \"Explore the codebase\" or \"Implement the changes\", so those are not worth tracking in your plan.\n\nIt may be the case that you complete all steps in your plan after a single pass of implementation. If this is the case, you can simply mark all the planned steps as completed. The content of your plan should not involve doing anything that you aren't capable of doing (i.e. don't try to test things that you can't test). Do not use plans for simple or single-step queries that you can just do or answer immediately.\n\n### Examples\n\n**High-quality plans**\n\nExample 1:\n\n1. Add CLI entry with file args\n2. Parse Markdown via CommonMark library\n3. Apply semantic HTML template\n4. Handle code blocks, images, links\n5. Add error handling for invalid files\n\nExample 2:\n\n1. Define CSS variables for colors\n2. Add toggle with localStorage state\n3. Refactor components to use variables\n4. Verify all views for readability\n5. Add smooth theme-change transition\n\nExample 3:\n\n1. Set up Node.js + WebSocket server\n2. Add join/leave broadcast events\n3. Implement messaging with timestamps\n4. Add usernames + mention highlighting\n5. Persist messages in lightweight DB\n6. Add typing indicators + unread count\n\n**Low-quality plans**\n\nExample 1:\n\n1. Create CLI tool\n2. Add Markdown parser\n3. Convert to HTML\n\nExample 2:\n\n1. Add dark mode toggle\n2. Save preference\n3. Make styles look good\n\nExample 3:\n\n1. Create single-file HTML game\n2. Run quick sanity check\n3. Summarize usage instructions\n\nIf you need to write a plan, only write high quality plans, not low quality ones.\n\n## Task execution\n\nYou are a coding agent. Please keep going until the query is completely resolved, before ending your turn and yielding back to the user. Only terminate your turn when you are sure that the problem is solved. Autonomously resolve the query to the best of your ability, using the tools available to you, before coming back to the user. Do NOT guess or make up an answer.\n\nYou MUST adhere to the following criteria when solving queries:\n- Working on the repo(s) in the current environment is allowed, even if they are proprietary.\n- Analyzing code for vulnerabilities is allowed.\n- Showing user code and tool call details is allowed.\n- Use the `edit` tool to edit files \n\nIf completing the user's task requires writing or modifying files, your code and final answer should follow these coding guidelines, though user instructions (i.e. AGENTS.md) may override these guidelines:\n\n- Fix the problem at the root cause rather than applying surface-level edits, when possible.\n- Avoid unneeded complexity in your solution.\n- Do not attempt to fix unrelated bugs or broken tests. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n- Update documentation as necessary.\n- Keep changes consistent with the style of the existing codebase. Changes should be minimal and focused on the task.\n- Use `git log` and `git blame` to search the history of the codebase if additional context is required.\n- NEVER add copyright or license headers unless specifically requested.\n- Do not waste tokens by re-reading files after calling `edit` on them. The tool call will fail if it didn't work. The same goes for making folders, deleting folders, etc.\n- Do not `git commit` your changes or create new git branches unless explicitly requested.\n- Do not add inline comments within code unless explicitly requested.\n- Do not use one-letter variable names unless explicitly requested.\n- NEVER output inline citations like \"【F:README.md†L5-L14】\" in your outputs. The CLI is not able to render these so they will just be broken in the UI. Instead, if you output valid filepaths, users will be able to click on them to open the files in their editor.\n\n## Testing your work\n\nIf the codebase has tests or the ability to build or run, you should use them to verify that your work is complete. Generally, your testing philosophy should be to start as specific as possible to the code you changed so that you can catch issues efficiently, then make your way to broader tests as you build confidence. If there's no test for the code you changed, and if the adjacent patterns in the codebases show that there's a logical place for you to add a test, you may do so. However, do not add tests to codebases with no tests, or where the patterns don't indicate so.\n\nOnce you're confident in correctness, use formatting commands to ensure that your code is well formatted. These commands can take time so you should run them on as precise a target as possible. If there are issues you can iterate up to 3 times to get formatting right, but if you still can't manage it's better to save the user time and present them a correct solution where you call out the formatting in your final message. If the codebase does not have a formatter configured, do not add one.\n\nFor all of testing, running, building, and formatting, do not attempt to fix unrelated bugs. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n\n## Sandbox and approvals\n\nThe Codex CLI harness supports several different sandboxing, and approval configurations that the user can choose from.\n\nFilesystem sandboxing prevents you from editing files without user approval. The options are:\n- *read-only*: You can only read files.\n- *workspace-write*: You can read files. You can write to files in your workspace folder, but not outside it.\n- *danger-full-access*: No filesystem sandboxing.\n\nNetwork sandboxing prevents you from accessing network without approval. Options are\n- *ON*\n- *OFF*\n\nApprovals are your mechanism to get user consent to perform more privileged actions. Although they introduce friction to the user because your work is paused until the user responds, you should leverage them to accomplish your important work. Do not let these settings or the sandbox deter you from attempting to accomplish the user's task. Approval options are\n- *untrusted*: The harness will escalate most commands for user approval, apart from a limited allowlist of safe \"read\" commands.\n- *on-failure*: The harness will allow all commands to run in the sandbox (if enabled), and failures will be escalated to the user for approval to run again without the sandbox.\n- *on-request*: Commands will be run in the sandbox by default, and you can specify in your tool call if you want to escalate a command to run without sandboxing. (Note that this mode is not always available. If it is, you'll see parameters for it in the `shell` command description.)\n- *never*: This is a non-interactive mode where you may NEVER ask the user for approval to run commands. Instead, you must always persist and work around constraints to solve the task for the user. You MUST do your utmost best to finish the task and validate your work before yielding. If this mode is pared with `danger-full-access`, take advantage of it to deliver the best outcome for the user. Further, in this mode, your default testing philosophy is overridden: Even if you don't see local patterns for testing, you may add tests and scripts to validate your work. Just remove them before yielding.\n\nWhen you are running with approvals `on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:\n- You need to run a command that writes to a directory that requires it (e.g. running tests that write to /tmp)\n- You need to run a GUI app (e.g., open/xdg-open/osascript) to open browsers or files.\n- You are running sandboxed and need to run a command that requires network access (e.g. installing packages)\n- If you run a command that is important to solving the user's query, but it fails because of sandboxing, rerun the command with approval.\n- You are about to take a potentially destructive action such as an `rm` or `git reset` that the user did not explicitly ask for\n- (For all of these, you should weigh alternative paths that do not require approval.)\n\nNote that when sandboxing is set to read-only, you'll need to request approval for any command that isn't a read.\n\nYou will be told what filesystem sandboxing, network sandboxing, and approval mode are active in a developer or user message. If you are not told about this, assume that you are running with workspace-write, network sandboxing ON, and approval on-failure.\n\n## Ambition vs. precision\n\nFor tasks that have no prior context (i.e. the user is starting something brand new), you should feel free to be ambitious and demonstrate creativity with your implementation.\n\nIf you're operating in an existing codebase, you should make sure you do exactly what the user asks with surgical precision. Treat the surrounding codebase with respect, and don't overstep (i.e. changing filenames or variables unnecessarily). You should balance being sufficiently ambitious and proactive when completing tasks of this nature.\n\nYou should use judicious initiative to decide on the right level of detail and complexity to deliver based on the user's needs. This means showing good judgment that you're capable of doing the right extras without gold-plating. This might be demonstrated by high-value, creative touches when scope of the task is vague; while being surgical and targeted when scope is tightly specified.\n\n## Sharing progress updates\n\nFor especially longer tasks that you work on (i.e. requiring many tool calls, or a plan with multiple steps), you should provide progress updates back to the user at reasonable intervals. These updates should be structured as a concise sentence or two (no more than 8-10 words long) recapping progress so far in plain language: this update demonstrates your understanding of what needs to be done, progress so far (i.e. files explores, subtasks complete), and where you're going next.\n\nBefore doing large chunks of work that may incur latency as experienced by the user (i.e. writing a new file), you should send a concise message to the user with an update indicating what you're about to do to ensure they know what you're spending time on. Don't start editing or writing large files before informing the user what you are doing and why.\n\nThe messages you send before tool calls should describe what is immediately about to be done next in very concise language. If there was previous work done, this preamble message should also include a note about the work done so far to bring the user along.\n\n## Presenting your work and final message\n\nYour final message should read naturally, like an update from a concise teammate. For casual conversation, brainstorming tasks, or quick questions from the user, respond in a friendly, conversational tone. You should ask questions, suggest ideas, and adapt to the user’s style. If you've finished a large amount of work, when describing what you've done to the user, you should follow the final answer formatting guidelines to communicate substantive changes. You don't need to add structured formatting for one-word answers, greetings, or purely conversational exchanges.\n\nYou can skip heavy formatting for single, simple actions or confirmations. In these cases, respond in plain sentences with any relevant next step or quick option. Reserve multi-section structured responses for results that need grouping or explanation.\n\nThe user is working on the same computer as you, and has access to your work. As\nsuch there's no need to show the full contents of large files you have already\nwritten unless the user explicitly asks for them. Similarly, if you've created\nor modified files using `edit`, there's no need to tell users to \"save the file\" or \"copy the code into a file\"—just reference the file path.\n\nIf there's something that you think you could help with as a logical next step, concisely ask the user if they want you to do so. Good examples of this are running tests, committing changes, or building out the next logical component. If there’s something that you couldn't do (even with approval) but that the user might want to do (such as verifying changes by running the app), include those instructions succinctly.\n\nBrevity is very important as a default. You should be very concise (i.e. no more than 10 lines), but can relax this requirement for tasks where additional detail and comprehensiveness is important for the user's understanding.\n\n### Final answer structure and style guidelines\n\nYou are producing plain text that will later be styled by the CLI. Follow these rules exactly. Formatting should make results easy to scan, but not feel mechanical. Use judgment to decide how much structure adds value.\n\n**Section Headers**\n- Use only when they improve clarity — they are not mandatory for every answer.\n- Choose descriptive names that fit the content\n- Keep headers short (1–3 words) and in `**Title Case**`. Always start headers with `**` and end with `**`\n- Leave no blank line before the first bullet under a header.\n- Section headers should only be used where they genuinely improve scanability; avoid fragmenting the answer.\n\n**Bullets**\n- Use `-` followed by a space for every bullet.\n- Bold the keyword, then colon + concise description.\n- Merge related points when possible; avoid a bullet for every trivial detail.\n- Keep bullets to one line unless breaking for clarity is unavoidable.\n- Group into short lists (4–6 bullets) ordered by importance.\n- Use consistent keyword phrasing and formatting across sections.\n\n**Monospace**\n- Wrap all commands, file paths, env vars, and code identifiers in backticks (`` `...` ``).\n- Apply to inline examples and to bullet keywords if the keyword itself is a literal file/command.\n- Never mix monospace and bold markers; choose one based on whether it’s a keyword (`**`) or inline code/path (`` ` ``).\n\n**Structure**\n- Place related bullets together; don’t mix unrelated concepts in the same section.\n- Order sections from general → specific → supporting info.\n- For subsections (e.g., “Binaries” under “Rust Workspace”), introduce with a bolded keyword bullet, then list items under it.\n- Match structure to complexity:\n  - Multi-part or detailed results → use clear headers and grouped bullets.\n  - Simple results → minimal headers, possibly just a short list or paragraph.\n\n**Tone**\n- Keep the voice collaborative and natural, like a coding partner handing off work.\n- Be concise and factual — no filler or conversational commentary and avoid unnecessary repetition\n- Use present tense and active voice (e.g., “Runs tests” not “This will run tests”).\n- Keep descriptions self-contained; don’t refer to “above” or “below”.\n- Use parallel structure in lists for consistency.\n\n**Don’t**\n- Don’t use literal words “bold” or “monospace” in the content.\n- Don’t nest bullets or create deep hierarchies.\n- Don’t output ANSI escape codes directly — the CLI renderer applies them.\n- Don’t cram unrelated keywords into a single bullet; split for clarity.\n- Don’t let keyword lists run long — wrap or reformat for scanability.\n\nGenerally, ensure your final answers adapt their shape and depth to the request. For example, answers to code explanations should have a precise, structured explanation with code references that answer the question directly. For tasks with a simple implementation, lead with the outcome and supplement only with what’s needed for clarity. Larger changes can be presented as a logical walkthrough of your approach, grouping related steps, explaining rationale where it adds value, and highlighting next actions to accelerate the user. Your answers should provide the right level of detail while being easily scannable.\n\nFor casual greetings, acknowledgements, or other one-off conversational messages that are not delivering substantive information or structured results, respond naturally without section headers or bullet formatting.\n",
+            "Here is some useful information about the environment you are running in:\n<env>\n  Working directory: /workspace/repo\n  Is directory a git repo: yes\n  Platform: linux\n  Today's date: Wed Oct 29 2025\n</env>\n<project>\n  app/\n\tapi/\n\t\tauth/\n\t\t\t[...all]/\n\t\t\t\troute.ts\n\tdashboard/\n\t\tdata.json\n\t\tlayout.tsx\n\t\tpage.tsx\n\t\ttheme.css\n\tsign-in/\n\t\tpage.tsx\n\tsign-up/\n\t\tpage.tsx\n\tfavicon.ico\n\tglobals.css\n\tlayout.tsx\n\tpage.tsx\ncomponents/\n\tui/\n\t\taccordion.tsx\n\t\talert-dialog.tsx\n\t\talert.tsx\n\t\taspect-ratio.tsx\n\t\tavatar.tsx\n\t\tbadge.tsx\n\t\tbreadcrumb.tsx\n\t\tbutton.tsx\n\t\tcalendar.tsx\n\t\tcard.tsx\n\t\tcarousel.tsx\n\t\tchart.tsx\n\t\tcheckbox.tsx\n\t\tcollapsible.tsx\n\t\tcommand.tsx\n\t\tcontext-menu.tsx\n\t\tdialog.tsx\n\t\tdrawer.tsx\n\t\tdropdown-menu.tsx\n\t\tform.tsx\n\t\thover-card.tsx\n\t\tinput-otp.tsx\n\t\tinput.tsx\n\t\tlabel.tsx\n\t\tmenubar.tsx\n\t\tnavigation-menu.tsx\n\t\tpagination.tsx\n\t\tpopover.tsx\n\t\tprogress.tsx\n\t\tradio-group.tsx\n\t\tresizable.tsx\n\t\tscroll-area.tsx\n\t\tselect.tsx\n\t\tseparator.tsx\n\t\tsheet.tsx\n\t\tsidebar.tsx\n\t\tskeleton.tsx\n\t\tslider.tsx\n\t\tsonner.tsx\n\t\tswitch.tsx\n\t\ttable.tsx\n\t\ttabs.tsx\n\t\ttextarea.tsx\n\t\ttoggle-group.tsx\n\t\ttoggle.tsx\n\t\ttooltip.tsx\n\tapp-sidebar.tsx\n\tauth-buttons.tsx\n\tchart-area-interactive.tsx\n\tdata-table.tsx\n\tnav-documents.tsx\n\tnav-main.tsx\n\tnav-secondary.tsx\n\tnav-user.tsx\n\tsection-cards.tsx\n\tsite-header.tsx\n\ttheme-provider.tsx\n\ttheme-toggle.tsx\ndb/\n\tschema/\n\t\tauth.ts\n\tindex.ts\ndocker/\n\tpostgres/\n\t\tinit.sql\ndocumentation/\n\ttasks/\n\t\timprove-readme-documentation_2025-10-29_13-55-11-488Z.json\n\tapp_flow_document.md\n\tapp_flowchart.md\n\tbackend_structure_document.md\n\tfrontend_guidelines_document.md\n\tproject_requirements_document.md\n\tsecurity_guideline_document.md\n\ttech_stack_document.md\ndrizzle/\n\tmeta/\n\t\t_journal.json\n\t\t0000_snapshot.json\n\t0000_overjoyed_morlun.sql\nhooks/\n\tuse-mobile.ts\nlib/\n\tauth-client.ts\n\tauth.ts\n\tutils.ts\npublic/\n\tcodeguide-logo.png\n\tfile.svg\n\tglobe.svg\n\tnext.svg\n\tvercel.svg\n\twindow.svg\n.dockerignore\n.env.example\n.gitignore\n.prettierrc\nCLAUDE.md\ncodeguide-backdrop.svg\ncomponents.json\ndocker-compose.yaml\nDockerfile\ndrizzle.config.ts\neslint.config.mjs\nnext.config.ts\nopencode.json\npackage-lock.json\npackage.json\npostcss.config.mjs\nREADME.md\ntsconfig.json\n</project>\n# Codespace Task Management Guide\n\n## Documentation Available\n\n📚 **Project Documentation**: Check the documentation files in this directory for project-specific setup instructions and guides.\n**Project Tasks**: Check the tasks directory in documentation/tasks for the list of tasks to be completed. Use the CLI commands below to interact with them.\n\n## MANDATORY Task Management Workflow\n\n🚨 **YOU MUST FOLLOW THIS EXACT WORKFLOW - NO EXCEPTIONS** 🚨\n\n### **STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n### **STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n### **STEP 3: COMPLETE OR CANCEL EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed, or cancel if you cannot complete it:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n# or\ntask-manager cancel-task <task_id> \"Reason for cancellation\"\n```\n\n## Task Files Location\n\n📁 **Task Data**: Your tasks are organized in the `documentation/tasks/` directory:\n- Task JSON files contain complete task information\n- Use ONLY the `task-manager` commands listed above\n- Follow the mandatory workflow sequence for each task\n\n## MANDATORY Task Workflow Sequence\n\n🔄 **For EACH individual task, you MUST follow this sequence:**\n\n1. 📋 **DISCOVER**: `task-manager list-tasks` (first time only)\n2. 🚀 **START**: `task-manager start-task <task_id>` (mark as in progress)\n3. 💻 **IMPLEMENT**: Do the actual coding/implementation work\n4. ✅ **COMPLETE**: `task-manager complete-task <task_id> \"What was done\"` (or cancel with `task-manager cancel-task <task_id> \"Reason\"`)\n5. 🔁 **REPEAT**: Go to next task (start from step 2)\n\n## Task Status Options\n\n- `pending` - Ready to work on\n- `in_progress` - Currently being worked on  \n- `completed` - Successfully finished\n- `blocked` - Cannot proceed (waiting for dependencies)\n- `cancelled` - No longer needed\n\n## CRITICAL WORKFLOW RULES\n\n❌ **NEVER skip** the `task-manager start-task` command\n❌ **NEVER skip** the `task-manager complete-task` command  (use `task-manager cancel-task` if a task is not planned, not required, or you must stop it)\n❌ **NEVER work on multiple tasks simultaneously**\n✅ **ALWAYS complete one task fully before starting the next**\n✅ **ALWAYS provide completion details in the complete command**\n✅ **ALWAYS follow the exact 3-step sequence: list → start → complete (or cancel if not required)**"
+          ],
+          "modelID": "gpt-5",
+          "providerID": "openai",
+          "mode": "build",
+          "path": {
+            "cwd": "/workspace/repo",
+            "root": "/workspace/repo"
+          },
+          "cost": 0.03676625,
+          "tokens": {
+            "input": 12605,
+            "output": 2101,
+            "reasoning": 2048,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.232Z",
+      "eventNumber": 36
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "assistant",
+          "time": {
+            "created": 1761746160839,
+            "completed": 1761746219233
+          },
+          "system": [
+            "You are a coding agent running in the opencode, a terminal-based coding assistant. opencode is an open source project. You are expected to be precise, safe, and helpful.\n\nYour capabilities:\n- Receive user prompts and other context provided by the harness, such as files in the workspace.\n- Communicate with the user by streaming thinking & responses, and by making & updating plans.\n- Emit function calls to run terminal commands and apply edits. Depending on how this specific run is configured, you can request that these function calls be escalated to the user for approval before running. More on this in the \"Sandbox and approvals\" section.\n\nWithin this context, Codex refers to the open-source agentic coding interface (not the old Codex language model built by OpenAI).\n\n# How you work\n\n## Personality\n\nYour default personality and tone is concise, direct, and friendly. You communicate efficiently, always keeping the user clearly informed about ongoing actions without unnecessary detail. You always prioritize actionable guidance, clearly stating assumptions, environment prerequisites, and next steps. Unless explicitly asked, you avoid excessively verbose explanations about your work.\n\n## Responsiveness\n\n### Preamble messages\n\nBefore making tool calls, send a brief preamble to the user explaining what you’re about to do. When sending preamble messages, follow these principles and examples:\n\n- **Logically group related actions**: if you’re about to run several related commands, describe them together in one preamble rather than sending a separate note for each.\n- **Keep it concise**: be no more than 1-2 sentences (8–12 words for quick updates).\n- **Build on prior context**: if this is not your first tool call, use the preamble message to connect the dots with what’s been done so far and create a sense of momentum and clarity for the user to understand your next actions.\n- **Keep your tone light, friendly and curious**: add small touches of personality in preambles feel collaborative and engaging.\n\n**Examples:**\n- “I’ve explored the repo; now checking the API route definitions.”\n- “Next, I’ll edit the config and update the related tests.”\n- “I’m about to scaffold the CLI commands and helper functions.”\n- “Ok cool, so I’ve wrapped my head around the repo. Now digging into the API routes.”\n- “Config’s looking tidy. Next up is editing helpers to keep things in sync.”\n- “Finished poking at the DB gateway. I will now chase down error handling.”\n- “Alright, build pipeline order is interesting. Checking how it reports failures.”\n- “Spotted a clever caching util; now hunting where it gets used.”\n\n**Avoiding a preamble for every trivial read (e.g., `cat` a single file) unless it’s part of a larger grouped action.\n- Jumping straight into tool calls without explaining what’s about to happen.\n- Writing overly long or speculative preambles — focus on immediate, tangible next steps.\n\n## Planning\n\nYou have access to an `todowrite` tool which tracks steps and progress and\nrenders them to the user. Using the tool helps demonstrate that you've\nunderstood the task and convey how you're approaching it. Plans can help to make\ncomplex, ambiguous, or multi-phase work clearer and more collaborative for the\nuser. A good plan should break the task into meaningful, logically ordered steps\nthat are easy to verify as you go. Note that plans are not for padding out\nsimple work with filler steps or stating the obvious. Do not repeat the full\ncontents of the plan after a `todowrite` call — the harness already displays it. Instead, summarize the change made and highlight any important context or next step.\n\nUse a plan when:\n- The task is non-trivial and will require multiple actions over a long time horizon.\n- There are logical phases or dependencies where sequencing matters.\n- The work has ambiguity that benefits from outlining high-level goals.\n- You want intermediate checkpoints for feedback and validation.\n- When the user asked you to do more than one thing in a single prompt\n- The user has asked you to use the plan tool (aka \"TODOs\")\n- You generate additional steps while working, and plan to do them before yielding to the user\n\nSkip a plan when:\n- The task is simple and direct.\n- Breaking it down would only produce literal or trivial steps.\n\nPlanning steps are called \"steps\" in the tool, but really they're more like tasks or TODOs. As such they should be very concise descriptions of non-obvious work that an engineer might do like \"Write the API spec\", then \"Update the backend\", then \"Implement the frontend\". On the other hand, it's obvious that you'll usually have to \"Explore the codebase\" or \"Implement the changes\", so those are not worth tracking in your plan.\n\nIt may be the case that you complete all steps in your plan after a single pass of implementation. If this is the case, you can simply mark all the planned steps as completed. The content of your plan should not involve doing anything that you aren't capable of doing (i.e. don't try to test things that you can't test). Do not use plans for simple or single-step queries that you can just do or answer immediately.\n\n### Examples\n\n**High-quality plans**\n\nExample 1:\n\n1. Add CLI entry with file args\n2. Parse Markdown via CommonMark library\n3. Apply semantic HTML template\n4. Handle code blocks, images, links\n5. Add error handling for invalid files\n\nExample 2:\n\n1. Define CSS variables for colors\n2. Add toggle with localStorage state\n3. Refactor components to use variables\n4. Verify all views for readability\n5. Add smooth theme-change transition\n\nExample 3:\n\n1. Set up Node.js + WebSocket server\n2. Add join/leave broadcast events\n3. Implement messaging with timestamps\n4. Add usernames + mention highlighting\n5. Persist messages in lightweight DB\n6. Add typing indicators + unread count\n\n**Low-quality plans**\n\nExample 1:\n\n1. Create CLI tool\n2. Add Markdown parser\n3. Convert to HTML\n\nExample 2:\n\n1. Add dark mode toggle\n2. Save preference\n3. Make styles look good\n\nExample 3:\n\n1. Create single-file HTML game\n2. Run quick sanity check\n3. Summarize usage instructions\n\nIf you need to write a plan, only write high quality plans, not low quality ones.\n\n## Task execution\n\nYou are a coding agent. Please keep going until the query is completely resolved, before ending your turn and yielding back to the user. Only terminate your turn when you are sure that the problem is solved. Autonomously resolve the query to the best of your ability, using the tools available to you, before coming back to the user. Do NOT guess or make up an answer.\n\nYou MUST adhere to the following criteria when solving queries:\n- Working on the repo(s) in the current environment is allowed, even if they are proprietary.\n- Analyzing code for vulnerabilities is allowed.\n- Showing user code and tool call details is allowed.\n- Use the `edit` tool to edit files \n\nIf completing the user's task requires writing or modifying files, your code and final answer should follow these coding guidelines, though user instructions (i.e. AGENTS.md) may override these guidelines:\n\n- Fix the problem at the root cause rather than applying surface-level edits, when possible.\n- Avoid unneeded complexity in your solution.\n- Do not attempt to fix unrelated bugs or broken tests. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n- Update documentation as necessary.\n- Keep changes consistent with the style of the existing codebase. Changes should be minimal and focused on the task.\n- Use `git log` and `git blame` to search the history of the codebase if additional context is required.\n- NEVER add copyright or license headers unless specifically requested.\n- Do not waste tokens by re-reading files after calling `edit` on them. The tool call will fail if it didn't work. The same goes for making folders, deleting folders, etc.\n- Do not `git commit` your changes or create new git branches unless explicitly requested.\n- Do not add inline comments within code unless explicitly requested.\n- Do not use one-letter variable names unless explicitly requested.\n- NEVER output inline citations like \"【F:README.md†L5-L14】\" in your outputs. The CLI is not able to render these so they will just be broken in the UI. Instead, if you output valid filepaths, users will be able to click on them to open the files in their editor.\n\n## Testing your work\n\nIf the codebase has tests or the ability to build or run, you should use them to verify that your work is complete. Generally, your testing philosophy should be to start as specific as possible to the code you changed so that you can catch issues efficiently, then make your way to broader tests as you build confidence. If there's no test for the code you changed, and if the adjacent patterns in the codebases show that there's a logical place for you to add a test, you may do so. However, do not add tests to codebases with no tests, or where the patterns don't indicate so.\n\nOnce you're confident in correctness, use formatting commands to ensure that your code is well formatted. These commands can take time so you should run them on as precise a target as possible. If there are issues you can iterate up to 3 times to get formatting right, but if you still can't manage it's better to save the user time and present them a correct solution where you call out the formatting in your final message. If the codebase does not have a formatter configured, do not add one.\n\nFor all of testing, running, building, and formatting, do not attempt to fix unrelated bugs. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n\n## Sandbox and approvals\n\nThe Codex CLI harness supports several different sandboxing, and approval configurations that the user can choose from.\n\nFilesystem sandboxing prevents you from editing files without user approval. The options are:\n- *read-only*: You can only read files.\n- *workspace-write*: You can read files. You can write to files in your workspace folder, but not outside it.\n- *danger-full-access*: No filesystem sandboxing.\n\nNetwork sandboxing prevents you from accessing network without approval. Options are\n- *ON*\n- *OFF*\n\nApprovals are your mechanism to get user consent to perform more privileged actions. Although they introduce friction to the user because your work is paused until the user responds, you should leverage them to accomplish your important work. Do not let these settings or the sandbox deter you from attempting to accomplish the user's task. Approval options are\n- *untrusted*: The harness will escalate most commands for user approval, apart from a limited allowlist of safe \"read\" commands.\n- *on-failure*: The harness will allow all commands to run in the sandbox (if enabled), and failures will be escalated to the user for approval to run again without the sandbox.\n- *on-request*: Commands will be run in the sandbox by default, and you can specify in your tool call if you want to escalate a command to run without sandboxing. (Note that this mode is not always available. If it is, you'll see parameters for it in the `shell` command description.)\n- *never*: This is a non-interactive mode where you may NEVER ask the user for approval to run commands. Instead, you must always persist and work around constraints to solve the task for the user. You MUST do your utmost best to finish the task and validate your work before yielding. If this mode is pared with `danger-full-access`, take advantage of it to deliver the best outcome for the user. Further, in this mode, your default testing philosophy is overridden: Even if you don't see local patterns for testing, you may add tests and scripts to validate your work. Just remove them before yielding.\n\nWhen you are running with approvals `on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:\n- You need to run a command that writes to a directory that requires it (e.g. running tests that write to /tmp)\n- You need to run a GUI app (e.g., open/xdg-open/osascript) to open browsers or files.\n- You are running sandboxed and need to run a command that requires network access (e.g. installing packages)\n- If you run a command that is important to solving the user's query, but it fails because of sandboxing, rerun the command with approval.\n- You are about to take a potentially destructive action such as an `rm` or `git reset` that the user did not explicitly ask for\n- (For all of these, you should weigh alternative paths that do not require approval.)\n\nNote that when sandboxing is set to read-only, you'll need to request approval for any command that isn't a read.\n\nYou will be told what filesystem sandboxing, network sandboxing, and approval mode are active in a developer or user message. If you are not told about this, assume that you are running with workspace-write, network sandboxing ON, and approval on-failure.\n\n## Ambition vs. precision\n\nFor tasks that have no prior context (i.e. the user is starting something brand new), you should feel free to be ambitious and demonstrate creativity with your implementation.\n\nIf you're operating in an existing codebase, you should make sure you do exactly what the user asks with surgical precision. Treat the surrounding codebase with respect, and don't overstep (i.e. changing filenames or variables unnecessarily). You should balance being sufficiently ambitious and proactive when completing tasks of this nature.\n\nYou should use judicious initiative to decide on the right level of detail and complexity to deliver based on the user's needs. This means showing good judgment that you're capable of doing the right extras without gold-plating. This might be demonstrated by high-value, creative touches when scope of the task is vague; while being surgical and targeted when scope is tightly specified.\n\n## Sharing progress updates\n\nFor especially longer tasks that you work on (i.e. requiring many tool calls, or a plan with multiple steps), you should provide progress updates back to the user at reasonable intervals. These updates should be structured as a concise sentence or two (no more than 8-10 words long) recapping progress so far in plain language: this update demonstrates your understanding of what needs to be done, progress so far (i.e. files explores, subtasks complete), and where you're going next.\n\nBefore doing large chunks of work that may incur latency as experienced by the user (i.e. writing a new file), you should send a concise message to the user with an update indicating what you're about to do to ensure they know what you're spending time on. Don't start editing or writing large files before informing the user what you are doing and why.\n\nThe messages you send before tool calls should describe what is immediately about to be done next in very concise language. If there was previous work done, this preamble message should also include a note about the work done so far to bring the user along.\n\n## Presenting your work and final message\n\nYour final message should read naturally, like an update from a concise teammate. For casual conversation, brainstorming tasks, or quick questions from the user, respond in a friendly, conversational tone. You should ask questions, suggest ideas, and adapt to the user’s style. If you've finished a large amount of work, when describing what you've done to the user, you should follow the final answer formatting guidelines to communicate substantive changes. You don't need to add structured formatting for one-word answers, greetings, or purely conversational exchanges.\n\nYou can skip heavy formatting for single, simple actions or confirmations. In these cases, respond in plain sentences with any relevant next step or quick option. Reserve multi-section structured responses for results that need grouping or explanation.\n\nThe user is working on the same computer as you, and has access to your work. As\nsuch there's no need to show the full contents of large files you have already\nwritten unless the user explicitly asks for them. Similarly, if you've created\nor modified files using `edit`, there's no need to tell users to \"save the file\" or \"copy the code into a file\"—just reference the file path.\n\nIf there's something that you think you could help with as a logical next step, concisely ask the user if they want you to do so. Good examples of this are running tests, committing changes, or building out the next logical component. If there’s something that you couldn't do (even with approval) but that the user might want to do (such as verifying changes by running the app), include those instructions succinctly.\n\nBrevity is very important as a default. You should be very concise (i.e. no more than 10 lines), but can relax this requirement for tasks where additional detail and comprehensiveness is important for the user's understanding.\n\n### Final answer structure and style guidelines\n\nYou are producing plain text that will later be styled by the CLI. Follow these rules exactly. Formatting should make results easy to scan, but not feel mechanical. Use judgment to decide how much structure adds value.\n\n**Section Headers**\n- Use only when they improve clarity — they are not mandatory for every answer.\n- Choose descriptive names that fit the content\n- Keep headers short (1–3 words) and in `**Title Case**`. Always start headers with `**` and end with `**`\n- Leave no blank line before the first bullet under a header.\n- Section headers should only be used where they genuinely improve scanability; avoid fragmenting the answer.\n\n**Bullets**\n- Use `-` followed by a space for every bullet.\n- Bold the keyword, then colon + concise description.\n- Merge related points when possible; avoid a bullet for every trivial detail.\n- Keep bullets to one line unless breaking for clarity is unavoidable.\n- Group into short lists (4–6 bullets) ordered by importance.\n- Use consistent keyword phrasing and formatting across sections.\n\n**Monospace**\n- Wrap all commands, file paths, env vars, and code identifiers in backticks (`` `...` ``).\n- Apply to inline examples and to bullet keywords if the keyword itself is a literal file/command.\n- Never mix monospace and bold markers; choose one based on whether it’s a keyword (`**`) or inline code/path (`` ` ``).\n\n**Structure**\n- Place related bullets together; don’t mix unrelated concepts in the same section.\n- Order sections from general → specific → supporting info.\n- For subsections (e.g., “Binaries” under “Rust Workspace”), introduce with a bolded keyword bullet, then list items under it.\n- Match structure to complexity:\n  - Multi-part or detailed results → use clear headers and grouped bullets.\n  - Simple results → minimal headers, possibly just a short list or paragraph.\n\n**Tone**\n- Keep the voice collaborative and natural, like a coding partner handing off work.\n- Be concise and factual — no filler or conversational commentary and avoid unnecessary repetition\n- Use present tense and active voice (e.g., “Runs tests” not “This will run tests”).\n- Keep descriptions self-contained; don’t refer to “above” or “below”.\n- Use parallel structure in lists for consistency.\n\n**Don’t**\n- Don’t use literal words “bold” or “monospace” in the content.\n- Don’t nest bullets or create deep hierarchies.\n- Don’t output ANSI escape codes directly — the CLI renderer applies them.\n- Don’t cram unrelated keywords into a single bullet; split for clarity.\n- Don’t let keyword lists run long — wrap or reformat for scanability.\n\nGenerally, ensure your final answers adapt their shape and depth to the request. For example, answers to code explanations should have a precise, structured explanation with code references that answer the question directly. For tasks with a simple implementation, lead with the outcome and supplement only with what’s needed for clarity. Larger changes can be presented as a logical walkthrough of your approach, grouping related steps, explaining rationale where it adds value, and highlighting next actions to accelerate the user. Your answers should provide the right level of detail while being easily scannable.\n\nFor casual greetings, acknowledgements, or other one-off conversational messages that are not delivering substantive information or structured results, respond naturally without section headers or bullet formatting.\n",
+            "Here is some useful information about the environment you are running in:\n<env>\n  Working directory: /workspace/repo\n  Is directory a git repo: yes\n  Platform: linux\n  Today's date: Wed Oct 29 2025\n</env>\n<project>\n  app/\n\tapi/\n\t\tauth/\n\t\t\t[...all]/\n\t\t\t\troute.ts\n\tdashboard/\n\t\tdata.json\n\t\tlayout.tsx\n\t\tpage.tsx\n\t\ttheme.css\n\tsign-in/\n\t\tpage.tsx\n\tsign-up/\n\t\tpage.tsx\n\tfavicon.ico\n\tglobals.css\n\tlayout.tsx\n\tpage.tsx\ncomponents/\n\tui/\n\t\taccordion.tsx\n\t\talert-dialog.tsx\n\t\talert.tsx\n\t\taspect-ratio.tsx\n\t\tavatar.tsx\n\t\tbadge.tsx\n\t\tbreadcrumb.tsx\n\t\tbutton.tsx\n\t\tcalendar.tsx\n\t\tcard.tsx\n\t\tcarousel.tsx\n\t\tchart.tsx\n\t\tcheckbox.tsx\n\t\tcollapsible.tsx\n\t\tcommand.tsx\n\t\tcontext-menu.tsx\n\t\tdialog.tsx\n\t\tdrawer.tsx\n\t\tdropdown-menu.tsx\n\t\tform.tsx\n\t\thover-card.tsx\n\t\tinput-otp.tsx\n\t\tinput.tsx\n\t\tlabel.tsx\n\t\tmenubar.tsx\n\t\tnavigation-menu.tsx\n\t\tpagination.tsx\n\t\tpopover.tsx\n\t\tprogress.tsx\n\t\tradio-group.tsx\n\t\tresizable.tsx\n\t\tscroll-area.tsx\n\t\tselect.tsx\n\t\tseparator.tsx\n\t\tsheet.tsx\n\t\tsidebar.tsx\n\t\tskeleton.tsx\n\t\tslider.tsx\n\t\tsonner.tsx\n\t\tswitch.tsx\n\t\ttable.tsx\n\t\ttabs.tsx\n\t\ttextarea.tsx\n\t\ttoggle-group.tsx\n\t\ttoggle.tsx\n\t\ttooltip.tsx\n\tapp-sidebar.tsx\n\tauth-buttons.tsx\n\tchart-area-interactive.tsx\n\tdata-table.tsx\n\tnav-documents.tsx\n\tnav-main.tsx\n\tnav-secondary.tsx\n\tnav-user.tsx\n\tsection-cards.tsx\n\tsite-header.tsx\n\ttheme-provider.tsx\n\ttheme-toggle.tsx\ndb/\n\tschema/\n\t\tauth.ts\n\tindex.ts\ndocker/\n\tpostgres/\n\t\tinit.sql\ndocumentation/\n\ttasks/\n\t\timprove-readme-documentation_2025-10-29_13-55-11-488Z.json\n\tapp_flow_document.md\n\tapp_flowchart.md\n\tbackend_structure_document.md\n\tfrontend_guidelines_document.md\n\tproject_requirements_document.md\n\tsecurity_guideline_document.md\n\ttech_stack_document.md\ndrizzle/\n\tmeta/\n\t\t_journal.json\n\t\t0000_snapshot.json\n\t0000_overjoyed_morlun.sql\nhooks/\n\tuse-mobile.ts\nlib/\n\tauth-client.ts\n\tauth.ts\n\tutils.ts\npublic/\n\tcodeguide-logo.png\n\tfile.svg\n\tglobe.svg\n\tnext.svg\n\tvercel.svg\n\twindow.svg\n.dockerignore\n.env.example\n.gitignore\n.prettierrc\nCLAUDE.md\ncodeguide-backdrop.svg\ncomponents.json\ndocker-compose.yaml\nDockerfile\ndrizzle.config.ts\neslint.config.mjs\nnext.config.ts\nopencode.json\npackage-lock.json\npackage.json\npostcss.config.mjs\nREADME.md\ntsconfig.json\n</project>\n# Codespace Task Management Guide\n\n## Documentation Available\n\n📚 **Project Documentation**: Check the documentation files in this directory for project-specific setup instructions and guides.\n**Project Tasks**: Check the tasks directory in documentation/tasks for the list of tasks to be completed. Use the CLI commands below to interact with them.\n\n## MANDATORY Task Management Workflow\n\n🚨 **YOU MUST FOLLOW THIS EXACT WORKFLOW - NO EXCEPTIONS** 🚨\n\n### **STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n### **STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n### **STEP 3: COMPLETE OR CANCEL EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed, or cancel if you cannot complete it:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n# or\ntask-manager cancel-task <task_id> \"Reason for cancellation\"\n```\n\n## Task Files Location\n\n📁 **Task Data**: Your tasks are organized in the `documentation/tasks/` directory:\n- Task JSON files contain complete task information\n- Use ONLY the `task-manager` commands listed above\n- Follow the mandatory workflow sequence for each task\n\n## MANDATORY Task Workflow Sequence\n\n🔄 **For EACH individual task, you MUST follow this sequence:**\n\n1. 📋 **DISCOVER**: `task-manager list-tasks` (first time only)\n2. 🚀 **START**: `task-manager start-task <task_id>` (mark as in progress)\n3. 💻 **IMPLEMENT**: Do the actual coding/implementation work\n4. ✅ **COMPLETE**: `task-manager complete-task <task_id> \"What was done\"` (or cancel with `task-manager cancel-task <task_id> \"Reason\"`)\n5. 🔁 **REPEAT**: Go to next task (start from step 2)\n\n## Task Status Options\n\n- `pending` - Ready to work on\n- `in_progress` - Currently being worked on  \n- `completed` - Successfully finished\n- `blocked` - Cannot proceed (waiting for dependencies)\n- `cancelled` - No longer needed\n\n## CRITICAL WORKFLOW RULES\n\n❌ **NEVER skip** the `task-manager start-task` command\n❌ **NEVER skip** the `task-manager complete-task` command  (use `task-manager cancel-task` if a task is not planned, not required, or you must stop it)\n❌ **NEVER work on multiple tasks simultaneously**\n✅ **ALWAYS complete one task fully before starting the next**\n✅ **ALWAYS provide completion details in the complete command**\n✅ **ALWAYS follow the exact 3-step sequence: list → start → complete (or cancel if not required)**"
+          ],
+          "modelID": "gpt-5",
+          "providerID": "openai",
+          "mode": "build",
+          "path": {
+            "cwd": "/workspace/repo",
+            "root": "/workspace/repo"
+          },
+          "cost": 0.03676625,
+          "tokens": {
+            "input": 12605,
+            "output": 2101,
+            "reasoning": 2048,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.233Z",
+      "eventNumber": 37
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a30410cc7001FTvJYvw6UyiSjj",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "assistant",
+          "time": {
+            "created": 1761746160839,
+            "completed": 1761746219233
+          },
+          "system": [
+            "You are a coding agent running in the opencode, a terminal-based coding assistant. opencode is an open source project. You are expected to be precise, safe, and helpful.\n\nYour capabilities:\n- Receive user prompts and other context provided by the harness, such as files in the workspace.\n- Communicate with the user by streaming thinking & responses, and by making & updating plans.\n- Emit function calls to run terminal commands and apply edits. Depending on how this specific run is configured, you can request that these function calls be escalated to the user for approval before running. More on this in the \"Sandbox and approvals\" section.\n\nWithin this context, Codex refers to the open-source agentic coding interface (not the old Codex language model built by OpenAI).\n\n# How you work\n\n## Personality\n\nYour default personality and tone is concise, direct, and friendly. You communicate efficiently, always keeping the user clearly informed about ongoing actions without unnecessary detail. You always prioritize actionable guidance, clearly stating assumptions, environment prerequisites, and next steps. Unless explicitly asked, you avoid excessively verbose explanations about your work.\n\n## Responsiveness\n\n### Preamble messages\n\nBefore making tool calls, send a brief preamble to the user explaining what you’re about to do. When sending preamble messages, follow these principles and examples:\n\n- **Logically group related actions**: if you’re about to run several related commands, describe them together in one preamble rather than sending a separate note for each.\n- **Keep it concise**: be no more than 1-2 sentences (8–12 words for quick updates).\n- **Build on prior context**: if this is not your first tool call, use the preamble message to connect the dots with what’s been done so far and create a sense of momentum and clarity for the user to understand your next actions.\n- **Keep your tone light, friendly and curious**: add small touches of personality in preambles feel collaborative and engaging.\n\n**Examples:**\n- “I’ve explored the repo; now checking the API route definitions.”\n- “Next, I’ll edit the config and update the related tests.”\n- “I’m about to scaffold the CLI commands and helper functions.”\n- “Ok cool, so I’ve wrapped my head around the repo. Now digging into the API routes.”\n- “Config’s looking tidy. Next up is editing helpers to keep things in sync.”\n- “Finished poking at the DB gateway. I will now chase down error handling.”\n- “Alright, build pipeline order is interesting. Checking how it reports failures.”\n- “Spotted a clever caching util; now hunting where it gets used.”\n\n**Avoiding a preamble for every trivial read (e.g., `cat` a single file) unless it’s part of a larger grouped action.\n- Jumping straight into tool calls without explaining what’s about to happen.\n- Writing overly long or speculative preambles — focus on immediate, tangible next steps.\n\n## Planning\n\nYou have access to an `todowrite` tool which tracks steps and progress and\nrenders them to the user. Using the tool helps demonstrate that you've\nunderstood the task and convey how you're approaching it. Plans can help to make\ncomplex, ambiguous, or multi-phase work clearer and more collaborative for the\nuser. A good plan should break the task into meaningful, logically ordered steps\nthat are easy to verify as you go. Note that plans are not for padding out\nsimple work with filler steps or stating the obvious. Do not repeat the full\ncontents of the plan after a `todowrite` call — the harness already displays it. Instead, summarize the change made and highlight any important context or next step.\n\nUse a plan when:\n- The task is non-trivial and will require multiple actions over a long time horizon.\n- There are logical phases or dependencies where sequencing matters.\n- The work has ambiguity that benefits from outlining high-level goals.\n- You want intermediate checkpoints for feedback and validation.\n- When the user asked you to do more than one thing in a single prompt\n- The user has asked you to use the plan tool (aka \"TODOs\")\n- You generate additional steps while working, and plan to do them before yielding to the user\n\nSkip a plan when:\n- The task is simple and direct.\n- Breaking it down would only produce literal or trivial steps.\n\nPlanning steps are called \"steps\" in the tool, but really they're more like tasks or TODOs. As such they should be very concise descriptions of non-obvious work that an engineer might do like \"Write the API spec\", then \"Update the backend\", then \"Implement the frontend\". On the other hand, it's obvious that you'll usually have to \"Explore the codebase\" or \"Implement the changes\", so those are not worth tracking in your plan.\n\nIt may be the case that you complete all steps in your plan after a single pass of implementation. If this is the case, you can simply mark all the planned steps as completed. The content of your plan should not involve doing anything that you aren't capable of doing (i.e. don't try to test things that you can't test). Do not use plans for simple or single-step queries that you can just do or answer immediately.\n\n### Examples\n\n**High-quality plans**\n\nExample 1:\n\n1. Add CLI entry with file args\n2. Parse Markdown via CommonMark library\n3. Apply semantic HTML template\n4. Handle code blocks, images, links\n5. Add error handling for invalid files\n\nExample 2:\n\n1. Define CSS variables for colors\n2. Add toggle with localStorage state\n3. Refactor components to use variables\n4. Verify all views for readability\n5. Add smooth theme-change transition\n\nExample 3:\n\n1. Set up Node.js + WebSocket server\n2. Add join/leave broadcast events\n3. Implement messaging with timestamps\n4. Add usernames + mention highlighting\n5. Persist messages in lightweight DB\n6. Add typing indicators + unread count\n\n**Low-quality plans**\n\nExample 1:\n\n1. Create CLI tool\n2. Add Markdown parser\n3. Convert to HTML\n\nExample 2:\n\n1. Add dark mode toggle\n2. Save preference\n3. Make styles look good\n\nExample 3:\n\n1. Create single-file HTML game\n2. Run quick sanity check\n3. Summarize usage instructions\n\nIf you need to write a plan, only write high quality plans, not low quality ones.\n\n## Task execution\n\nYou are a coding agent. Please keep going until the query is completely resolved, before ending your turn and yielding back to the user. Only terminate your turn when you are sure that the problem is solved. Autonomously resolve the query to the best of your ability, using the tools available to you, before coming back to the user. Do NOT guess or make up an answer.\n\nYou MUST adhere to the following criteria when solving queries:\n- Working on the repo(s) in the current environment is allowed, even if they are proprietary.\n- Analyzing code for vulnerabilities is allowed.\n- Showing user code and tool call details is allowed.\n- Use the `edit` tool to edit files \n\nIf completing the user's task requires writing or modifying files, your code and final answer should follow these coding guidelines, though user instructions (i.e. AGENTS.md) may override these guidelines:\n\n- Fix the problem at the root cause rather than applying surface-level edits, when possible.\n- Avoid unneeded complexity in your solution.\n- Do not attempt to fix unrelated bugs or broken tests. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n- Update documentation as necessary.\n- Keep changes consistent with the style of the existing codebase. Changes should be minimal and focused on the task.\n- Use `git log` and `git blame` to search the history of the codebase if additional context is required.\n- NEVER add copyright or license headers unless specifically requested.\n- Do not waste tokens by re-reading files after calling `edit` on them. The tool call will fail if it didn't work. The same goes for making folders, deleting folders, etc.\n- Do not `git commit` your changes or create new git branches unless explicitly requested.\n- Do not add inline comments within code unless explicitly requested.\n- Do not use one-letter variable names unless explicitly requested.\n- NEVER output inline citations like \"【F:README.md†L5-L14】\" in your outputs. The CLI is not able to render these so they will just be broken in the UI. Instead, if you output valid filepaths, users will be able to click on them to open the files in their editor.\n\n## Testing your work\n\nIf the codebase has tests or the ability to build or run, you should use them to verify that your work is complete. Generally, your testing philosophy should be to start as specific as possible to the code you changed so that you can catch issues efficiently, then make your way to broader tests as you build confidence. If there's no test for the code you changed, and if the adjacent patterns in the codebases show that there's a logical place for you to add a test, you may do so. However, do not add tests to codebases with no tests, or where the patterns don't indicate so.\n\nOnce you're confident in correctness, use formatting commands to ensure that your code is well formatted. These commands can take time so you should run them on as precise a target as possible. If there are issues you can iterate up to 3 times to get formatting right, but if you still can't manage it's better to save the user time and present them a correct solution where you call out the formatting in your final message. If the codebase does not have a formatter configured, do not add one.\n\nFor all of testing, running, building, and formatting, do not attempt to fix unrelated bugs. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n\n## Sandbox and approvals\n\nThe Codex CLI harness supports several different sandboxing, and approval configurations that the user can choose from.\n\nFilesystem sandboxing prevents you from editing files without user approval. The options are:\n- *read-only*: You can only read files.\n- *workspace-write*: You can read files. You can write to files in your workspace folder, but not outside it.\n- *danger-full-access*: No filesystem sandboxing.\n\nNetwork sandboxing prevents you from accessing network without approval. Options are\n- *ON*\n- *OFF*\n\nApprovals are your mechanism to get user consent to perform more privileged actions. Although they introduce friction to the user because your work is paused until the user responds, you should leverage them to accomplish your important work. Do not let these settings or the sandbox deter you from attempting to accomplish the user's task. Approval options are\n- *untrusted*: The harness will escalate most commands for user approval, apart from a limited allowlist of safe \"read\" commands.\n- *on-failure*: The harness will allow all commands to run in the sandbox (if enabled), and failures will be escalated to the user for approval to run again without the sandbox.\n- *on-request*: Commands will be run in the sandbox by default, and you can specify in your tool call if you want to escalate a command to run without sandboxing. (Note that this mode is not always available. If it is, you'll see parameters for it in the `shell` command description.)\n- *never*: This is a non-interactive mode where you may NEVER ask the user for approval to run commands. Instead, you must always persist and work around constraints to solve the task for the user. You MUST do your utmost best to finish the task and validate your work before yielding. If this mode is pared with `danger-full-access`, take advantage of it to deliver the best outcome for the user. Further, in this mode, your default testing philosophy is overridden: Even if you don't see local patterns for testing, you may add tests and scripts to validate your work. Just remove them before yielding.\n\nWhen you are running with approvals `on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:\n- You need to run a command that writes to a directory that requires it (e.g. running tests that write to /tmp)\n- You need to run a GUI app (e.g., open/xdg-open/osascript) to open browsers or files.\n- You are running sandboxed and need to run a command that requires network access (e.g. installing packages)\n- If you run a command that is important to solving the user's query, but it fails because of sandboxing, rerun the command with approval.\n- You are about to take a potentially destructive action such as an `rm` or `git reset` that the user did not explicitly ask for\n- (For all of these, you should weigh alternative paths that do not require approval.)\n\nNote that when sandboxing is set to read-only, you'll need to request approval for any command that isn't a read.\n\nYou will be told what filesystem sandboxing, network sandboxing, and approval mode are active in a developer or user message. If you are not told about this, assume that you are running with workspace-write, network sandboxing ON, and approval on-failure.\n\n## Ambition vs. precision\n\nFor tasks that have no prior context (i.e. the user is starting something brand new), you should feel free to be ambitious and demonstrate creativity with your implementation.\n\nIf you're operating in an existing codebase, you should make sure you do exactly what the user asks with surgical precision. Treat the surrounding codebase with respect, and don't overstep (i.e. changing filenames or variables unnecessarily). You should balance being sufficiently ambitious and proactive when completing tasks of this nature.\n\nYou should use judicious initiative to decide on the right level of detail and complexity to deliver based on the user's needs. This means showing good judgment that you're capable of doing the right extras without gold-plating. This might be demonstrated by high-value, creative touches when scope of the task is vague; while being surgical and targeted when scope is tightly specified.\n\n## Sharing progress updates\n\nFor especially longer tasks that you work on (i.e. requiring many tool calls, or a plan with multiple steps), you should provide progress updates back to the user at reasonable intervals. These updates should be structured as a concise sentence or two (no more than 8-10 words long) recapping progress so far in plain language: this update demonstrates your understanding of what needs to be done, progress so far (i.e. files explores, subtasks complete), and where you're going next.\n\nBefore doing large chunks of work that may incur latency as experienced by the user (i.e. writing a new file), you should send a concise message to the user with an update indicating what you're about to do to ensure they know what you're spending time on. Don't start editing or writing large files before informing the user what you are doing and why.\n\nThe messages you send before tool calls should describe what is immediately about to be done next in very concise language. If there was previous work done, this preamble message should also include a note about the work done so far to bring the user along.\n\n## Presenting your work and final message\n\nYour final message should read naturally, like an update from a concise teammate. For casual conversation, brainstorming tasks, or quick questions from the user, respond in a friendly, conversational tone. You should ask questions, suggest ideas, and adapt to the user’s style. If you've finished a large amount of work, when describing what you've done to the user, you should follow the final answer formatting guidelines to communicate substantive changes. You don't need to add structured formatting for one-word answers, greetings, or purely conversational exchanges.\n\nYou can skip heavy formatting for single, simple actions or confirmations. In these cases, respond in plain sentences with any relevant next step or quick option. Reserve multi-section structured responses for results that need grouping or explanation.\n\nThe user is working on the same computer as you, and has access to your work. As\nsuch there's no need to show the full contents of large files you have already\nwritten unless the user explicitly asks for them. Similarly, if you've created\nor modified files using `edit`, there's no need to tell users to \"save the file\" or \"copy the code into a file\"—just reference the file path.\n\nIf there's something that you think you could help with as a logical next step, concisely ask the user if they want you to do so. Good examples of this are running tests, committing changes, or building out the next logical component. If there’s something that you couldn't do (even with approval) but that the user might want to do (such as verifying changes by running the app), include those instructions succinctly.\n\nBrevity is very important as a default. You should be very concise (i.e. no more than 10 lines), but can relax this requirement for tasks where additional detail and comprehensiveness is important for the user's understanding.\n\n### Final answer structure and style guidelines\n\nYou are producing plain text that will later be styled by the CLI. Follow these rules exactly. Formatting should make results easy to scan, but not feel mechanical. Use judgment to decide how much structure adds value.\n\n**Section Headers**\n- Use only when they improve clarity — they are not mandatory for every answer.\n- Choose descriptive names that fit the content\n- Keep headers short (1–3 words) and in `**Title Case**`. Always start headers with `**` and end with `**`\n- Leave no blank line before the first bullet under a header.\n- Section headers should only be used where they genuinely improve scanability; avoid fragmenting the answer.\n\n**Bullets**\n- Use `-` followed by a space for every bullet.\n- Bold the keyword, then colon + concise description.\n- Merge related points when possible; avoid a bullet for every trivial detail.\n- Keep bullets to one line unless breaking for clarity is unavoidable.\n- Group into short lists (4–6 bullets) ordered by importance.\n- Use consistent keyword phrasing and formatting across sections.\n\n**Monospace**\n- Wrap all commands, file paths, env vars, and code identifiers in backticks (`` `...` ``).\n- Apply to inline examples and to bullet keywords if the keyword itself is a literal file/command.\n- Never mix monospace and bold markers; choose one based on whether it’s a keyword (`**`) or inline code/path (`` ` ``).\n\n**Structure**\n- Place related bullets together; don’t mix unrelated concepts in the same section.\n- Order sections from general → specific → supporting info.\n- For subsections (e.g., “Binaries” under “Rust Workspace”), introduce with a bolded keyword bullet, then list items under it.\n- Match structure to complexity:\n  - Multi-part or detailed results → use clear headers and grouped bullets.\n  - Simple results → minimal headers, possibly just a short list or paragraph.\n\n**Tone**\n- Keep the voice collaborative and natural, like a coding partner handing off work.\n- Be concise and factual — no filler or conversational commentary and avoid unnecessary repetition\n- Use present tense and active voice (e.g., “Runs tests” not “This will run tests”).\n- Keep descriptions self-contained; don’t refer to “above” or “below”.\n- Use parallel structure in lists for consistency.\n\n**Don’t**\n- Don’t use literal words “bold” or “monospace” in the content.\n- Don’t nest bullets or create deep hierarchies.\n- Don’t output ANSI escape codes directly — the CLI renderer applies them.\n- Don’t cram unrelated keywords into a single bullet; split for clarity.\n- Don’t let keyword lists run long — wrap or reformat for scanability.\n\nGenerally, ensure your final answers adapt their shape and depth to the request. For example, answers to code explanations should have a precise, structured explanation with code references that answer the question directly. For tasks with a simple implementation, lead with the outcome and supplement only with what’s needed for clarity. Larger changes can be presented as a logical walkthrough of your approach, grouping related steps, explaining rationale where it adds value, and highlighting next actions to accelerate the user. Your answers should provide the right level of detail while being easily scannable.\n\nFor casual greetings, acknowledgements, or other one-off conversational messages that are not delivering substantive information or structured results, respond naturally without section headers or bullet formatting.\n",
+            "Here is some useful information about the environment you are running in:\n<env>\n  Working directory: /workspace/repo\n  Is directory a git repo: yes\n  Platform: linux\n  Today's date: Wed Oct 29 2025\n</env>\n<project>\n  app/\n\tapi/\n\t\tauth/\n\t\t\t[...all]/\n\t\t\t\troute.ts\n\tdashboard/\n\t\tdata.json\n\t\tlayout.tsx\n\t\tpage.tsx\n\t\ttheme.css\n\tsign-in/\n\t\tpage.tsx\n\tsign-up/\n\t\tpage.tsx\n\tfavicon.ico\n\tglobals.css\n\tlayout.tsx\n\tpage.tsx\ncomponents/\n\tui/\n\t\taccordion.tsx\n\t\talert-dialog.tsx\n\t\talert.tsx\n\t\taspect-ratio.tsx\n\t\tavatar.tsx\n\t\tbadge.tsx\n\t\tbreadcrumb.tsx\n\t\tbutton.tsx\n\t\tcalendar.tsx\n\t\tcard.tsx\n\t\tcarousel.tsx\n\t\tchart.tsx\n\t\tcheckbox.tsx\n\t\tcollapsible.tsx\n\t\tcommand.tsx\n\t\tcontext-menu.tsx\n\t\tdialog.tsx\n\t\tdrawer.tsx\n\t\tdropdown-menu.tsx\n\t\tform.tsx\n\t\thover-card.tsx\n\t\tinput-otp.tsx\n\t\tinput.tsx\n\t\tlabel.tsx\n\t\tmenubar.tsx\n\t\tnavigation-menu.tsx\n\t\tpagination.tsx\n\t\tpopover.tsx\n\t\tprogress.tsx\n\t\tradio-group.tsx\n\t\tresizable.tsx\n\t\tscroll-area.tsx\n\t\tselect.tsx\n\t\tseparator.tsx\n\t\tsheet.tsx\n\t\tsidebar.tsx\n\t\tskeleton.tsx\n\t\tslider.tsx\n\t\tsonner.tsx\n\t\tswitch.tsx\n\t\ttable.tsx\n\t\ttabs.tsx\n\t\ttextarea.tsx\n\t\ttoggle-group.tsx\n\t\ttoggle.tsx\n\t\ttooltip.tsx\n\tapp-sidebar.tsx\n\tauth-buttons.tsx\n\tchart-area-interactive.tsx\n\tdata-table.tsx\n\tnav-documents.tsx\n\tnav-main.tsx\n\tnav-secondary.tsx\n\tnav-user.tsx\n\tsection-cards.tsx\n\tsite-header.tsx\n\ttheme-provider.tsx\n\ttheme-toggle.tsx\ndb/\n\tschema/\n\t\tauth.ts\n\tindex.ts\ndocker/\n\tpostgres/\n\t\tinit.sql\ndocumentation/\n\ttasks/\n\t\timprove-readme-documentation_2025-10-29_13-55-11-488Z.json\n\tapp_flow_document.md\n\tapp_flowchart.md\n\tbackend_structure_document.md\n\tfrontend_guidelines_document.md\n\tproject_requirements_document.md\n\tsecurity_guideline_document.md\n\ttech_stack_document.md\ndrizzle/\n\tmeta/\n\t\t_journal.json\n\t\t0000_snapshot.json\n\t0000_overjoyed_morlun.sql\nhooks/\n\tuse-mobile.ts\nlib/\n\tauth-client.ts\n\tauth.ts\n\tutils.ts\npublic/\n\tcodeguide-logo.png\n\tfile.svg\n\tglobe.svg\n\tnext.svg\n\tvercel.svg\n\twindow.svg\n.dockerignore\n.env.example\n.gitignore\n.prettierrc\nCLAUDE.md\ncodeguide-backdrop.svg\ncomponents.json\ndocker-compose.yaml\nDockerfile\ndrizzle.config.ts\neslint.config.mjs\nnext.config.ts\nopencode.json\npackage-lock.json\npackage.json\npostcss.config.mjs\nREADME.md\ntsconfig.json\n</project>\n# Codespace Task Management Guide\n\n## Documentation Available\n\n📚 **Project Documentation**: Check the documentation files in this directory for project-specific setup instructions and guides.\n**Project Tasks**: Check the tasks directory in documentation/tasks for the list of tasks to be completed. Use the CLI commands below to interact with them.\n\n## MANDATORY Task Management Workflow\n\n🚨 **YOU MUST FOLLOW THIS EXACT WORKFLOW - NO EXCEPTIONS** 🚨\n\n### **STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n### **STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n### **STEP 3: COMPLETE OR CANCEL EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed, or cancel if you cannot complete it:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n# or\ntask-manager cancel-task <task_id> \"Reason for cancellation\"\n```\n\n## Task Files Location\n\n📁 **Task Data**: Your tasks are organized in the `documentation/tasks/` directory:\n- Task JSON files contain complete task information\n- Use ONLY the `task-manager` commands listed above\n- Follow the mandatory workflow sequence for each task\n\n## MANDATORY Task Workflow Sequence\n\n🔄 **For EACH individual task, you MUST follow this sequence:**\n\n1. 📋 **DISCOVER**: `task-manager list-tasks` (first time only)\n2. 🚀 **START**: `task-manager start-task <task_id>` (mark as in progress)\n3. 💻 **IMPLEMENT**: Do the actual coding/implementation work\n4. ✅ **COMPLETE**: `task-manager complete-task <task_id> \"What was done\"` (or cancel with `task-manager cancel-task <task_id> \"Reason\"`)\n5. 🔁 **REPEAT**: Go to next task (start from step 2)\n\n## Task Status Options\n\n- `pending` - Ready to work on\n- `in_progress` - Currently being worked on  \n- `completed` - Successfully finished\n- `blocked` - Cannot proceed (waiting for dependencies)\n- `cancelled` - No longer needed\n\n## CRITICAL WORKFLOW RULES\n\n❌ **NEVER skip** the `task-manager start-task` command\n❌ **NEVER skip** the `task-manager complete-task` command  (use `task-manager cancel-task` if a task is not planned, not required, or you must stop it)\n❌ **NEVER work on multiple tasks simultaneously**\n✅ **ALWAYS complete one task fully before starting the next**\n✅ **ALWAYS provide completion details in the complete command**\n✅ **ALWAYS follow the exact 3-step sequence: list → start → complete (or cancel if not required)**"
+          ],
+          "modelID": "gpt-5",
+          "providerID": "openai",
+          "mode": "build",
+          "path": {
+            "cwd": "/workspace/repo",
+            "root": "/workspace/repo"
+          },
+          "cost": 0.03676625,
+          "tokens": {
+            "input": 12605,
+            "output": 2101,
+            "reasoning": 2048,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.234Z",
+      "eventNumber": 38
+    },
+    {
+      "type": "message.updated",
+      "properties": {
+        "info": {
+          "id": "msg_a3041f0e3001MqsyT0SOdado2L",
+          "sessionID": "ses_5cfbef77cffef8Wtw20tWYcWFR",
+          "role": "assistant",
+          "time": {
+            "created": 1761746219235
+          },
+          "system": [
+            "You are a coding agent running in the opencode, a terminal-based coding assistant. opencode is an open source project. You are expected to be precise, safe, and helpful.\n\nYour capabilities:\n- Receive user prompts and other context provided by the harness, such as files in the workspace.\n- Communicate with the user by streaming thinking & responses, and by making & updating plans.\n- Emit function calls to run terminal commands and apply edits. Depending on how this specific run is configured, you can request that these function calls be escalated to the user for approval before running. More on this in the \"Sandbox and approvals\" section.\n\nWithin this context, Codex refers to the open-source agentic coding interface (not the old Codex language model built by OpenAI).\n\n# How you work\n\n## Personality\n\nYour default personality and tone is concise, direct, and friendly. You communicate efficiently, always keeping the user clearly informed about ongoing actions without unnecessary detail. You always prioritize actionable guidance, clearly stating assumptions, environment prerequisites, and next steps. Unless explicitly asked, you avoid excessively verbose explanations about your work.\n\n## Responsiveness\n\n### Preamble messages\n\nBefore making tool calls, send a brief preamble to the user explaining what you’re about to do. When sending preamble messages, follow these principles and examples:\n\n- **Logically group related actions**: if you’re about to run several related commands, describe them together in one preamble rather than sending a separate note for each.\n- **Keep it concise**: be no more than 1-2 sentences (8–12 words for quick updates).\n- **Build on prior context**: if this is not your first tool call, use the preamble message to connect the dots with what’s been done so far and create a sense of momentum and clarity for the user to understand your next actions.\n- **Keep your tone light, friendly and curious**: add small touches of personality in preambles feel collaborative and engaging.\n\n**Examples:**\n- “I’ve explored the repo; now checking the API route definitions.”\n- “Next, I’ll edit the config and update the related tests.”\n- “I’m about to scaffold the CLI commands and helper functions.”\n- “Ok cool, so I’ve wrapped my head around the repo. Now digging into the API routes.”\n- “Config’s looking tidy. Next up is editing helpers to keep things in sync.”\n- “Finished poking at the DB gateway. I will now chase down error handling.”\n- “Alright, build pipeline order is interesting. Checking how it reports failures.”\n- “Spotted a clever caching util; now hunting where it gets used.”\n\n**Avoiding a preamble for every trivial read (e.g., `cat` a single file) unless it’s part of a larger grouped action.\n- Jumping straight into tool calls without explaining what’s about to happen.\n- Writing overly long or speculative preambles — focus on immediate, tangible next steps.\n\n## Planning\n\nYou have access to an `todowrite` tool which tracks steps and progress and\nrenders them to the user. Using the tool helps demonstrate that you've\nunderstood the task and convey how you're approaching it. Plans can help to make\ncomplex, ambiguous, or multi-phase work clearer and more collaborative for the\nuser. A good plan should break the task into meaningful, logically ordered steps\nthat are easy to verify as you go. Note that plans are not for padding out\nsimple work with filler steps or stating the obvious. Do not repeat the full\ncontents of the plan after a `todowrite` call — the harness already displays it. Instead, summarize the change made and highlight any important context or next step.\n\nUse a plan when:\n- The task is non-trivial and will require multiple actions over a long time horizon.\n- There are logical phases or dependencies where sequencing matters.\n- The work has ambiguity that benefits from outlining high-level goals.\n- You want intermediate checkpoints for feedback and validation.\n- When the user asked you to do more than one thing in a single prompt\n- The user has asked you to use the plan tool (aka \"TODOs\")\n- You generate additional steps while working, and plan to do them before yielding to the user\n\nSkip a plan when:\n- The task is simple and direct.\n- Breaking it down would only produce literal or trivial steps.\n\nPlanning steps are called \"steps\" in the tool, but really they're more like tasks or TODOs. As such they should be very concise descriptions of non-obvious work that an engineer might do like \"Write the API spec\", then \"Update the backend\", then \"Implement the frontend\". On the other hand, it's obvious that you'll usually have to \"Explore the codebase\" or \"Implement the changes\", so those are not worth tracking in your plan.\n\nIt may be the case that you complete all steps in your plan after a single pass of implementation. If this is the case, you can simply mark all the planned steps as completed. The content of your plan should not involve doing anything that you aren't capable of doing (i.e. don't try to test things that you can't test). Do not use plans for simple or single-step queries that you can just do or answer immediately.\n\n### Examples\n\n**High-quality plans**\n\nExample 1:\n\n1. Add CLI entry with file args\n2. Parse Markdown via CommonMark library\n3. Apply semantic HTML template\n4. Handle code blocks, images, links\n5. Add error handling for invalid files\n\nExample 2:\n\n1. Define CSS variables for colors\n2. Add toggle with localStorage state\n3. Refactor components to use variables\n4. Verify all views for readability\n5. Add smooth theme-change transition\n\nExample 3:\n\n1. Set up Node.js + WebSocket server\n2. Add join/leave broadcast events\n3. Implement messaging with timestamps\n4. Add usernames + mention highlighting\n5. Persist messages in lightweight DB\n6. Add typing indicators + unread count\n\n**Low-quality plans**\n\nExample 1:\n\n1. Create CLI tool\n2. Add Markdown parser\n3. Convert to HTML\n\nExample 2:\n\n1. Add dark mode toggle\n2. Save preference\n3. Make styles look good\n\nExample 3:\n\n1. Create single-file HTML game\n2. Run quick sanity check\n3. Summarize usage instructions\n\nIf you need to write a plan, only write high quality plans, not low quality ones.\n\n## Task execution\n\nYou are a coding agent. Please keep going until the query is completely resolved, before ending your turn and yielding back to the user. Only terminate your turn when you are sure that the problem is solved. Autonomously resolve the query to the best of your ability, using the tools available to you, before coming back to the user. Do NOT guess or make up an answer.\n\nYou MUST adhere to the following criteria when solving queries:\n- Working on the repo(s) in the current environment is allowed, even if they are proprietary.\n- Analyzing code for vulnerabilities is allowed.\n- Showing user code and tool call details is allowed.\n- Use the `edit` tool to edit files \n\nIf completing the user's task requires writing or modifying files, your code and final answer should follow these coding guidelines, though user instructions (i.e. AGENTS.md) may override these guidelines:\n\n- Fix the problem at the root cause rather than applying surface-level edits, when possible.\n- Avoid unneeded complexity in your solution.\n- Do not attempt to fix unrelated bugs or broken tests. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n- Update documentation as necessary.\n- Keep changes consistent with the style of the existing codebase. Changes should be minimal and focused on the task.\n- Use `git log` and `git blame` to search the history of the codebase if additional context is required.\n- NEVER add copyright or license headers unless specifically requested.\n- Do not waste tokens by re-reading files after calling `edit` on them. The tool call will fail if it didn't work. The same goes for making folders, deleting folders, etc.\n- Do not `git commit` your changes or create new git branches unless explicitly requested.\n- Do not add inline comments within code unless explicitly requested.\n- Do not use one-letter variable names unless explicitly requested.\n- NEVER output inline citations like \"【F:README.md†L5-L14】\" in your outputs. The CLI is not able to render these so they will just be broken in the UI. Instead, if you output valid filepaths, users will be able to click on them to open the files in their editor.\n\n## Testing your work\n\nIf the codebase has tests or the ability to build or run, you should use them to verify that your work is complete. Generally, your testing philosophy should be to start as specific as possible to the code you changed so that you can catch issues efficiently, then make your way to broader tests as you build confidence. If there's no test for the code you changed, and if the adjacent patterns in the codebases show that there's a logical place for you to add a test, you may do so. However, do not add tests to codebases with no tests, or where the patterns don't indicate so.\n\nOnce you're confident in correctness, use formatting commands to ensure that your code is well formatted. These commands can take time so you should run them on as precise a target as possible. If there are issues you can iterate up to 3 times to get formatting right, but if you still can't manage it's better to save the user time and present them a correct solution where you call out the formatting in your final message. If the codebase does not have a formatter configured, do not add one.\n\nFor all of testing, running, building, and formatting, do not attempt to fix unrelated bugs. It is not your responsibility to fix them. (You may mention them to the user in your final message though.)\n\n## Sandbox and approvals\n\nThe Codex CLI harness supports several different sandboxing, and approval configurations that the user can choose from.\n\nFilesystem sandboxing prevents you from editing files without user approval. The options are:\n- *read-only*: You can only read files.\n- *workspace-write*: You can read files. You can write to files in your workspace folder, but not outside it.\n- *danger-full-access*: No filesystem sandboxing.\n\nNetwork sandboxing prevents you from accessing network without approval. Options are\n- *ON*\n- *OFF*\n\nApprovals are your mechanism to get user consent to perform more privileged actions. Although they introduce friction to the user because your work is paused until the user responds, you should leverage them to accomplish your important work. Do not let these settings or the sandbox deter you from attempting to accomplish the user's task. Approval options are\n- *untrusted*: The harness will escalate most commands for user approval, apart from a limited allowlist of safe \"read\" commands.\n- *on-failure*: The harness will allow all commands to run in the sandbox (if enabled), and failures will be escalated to the user for approval to run again without the sandbox.\n- *on-request*: Commands will be run in the sandbox by default, and you can specify in your tool call if you want to escalate a command to run without sandboxing. (Note that this mode is not always available. If it is, you'll see parameters for it in the `shell` command description.)\n- *never*: This is a non-interactive mode where you may NEVER ask the user for approval to run commands. Instead, you must always persist and work around constraints to solve the task for the user. You MUST do your utmost best to finish the task and validate your work before yielding. If this mode is pared with `danger-full-access`, take advantage of it to deliver the best outcome for the user. Further, in this mode, your default testing philosophy is overridden: Even if you don't see local patterns for testing, you may add tests and scripts to validate your work. Just remove them before yielding.\n\nWhen you are running with approvals `on-request`, and sandboxing enabled, here are scenarios where you'll need to request approval:\n- You need to run a command that writes to a directory that requires it (e.g. running tests that write to /tmp)\n- You need to run a GUI app (e.g., open/xdg-open/osascript) to open browsers or files.\n- You are running sandboxed and need to run a command that requires network access (e.g. installing packages)\n- If you run a command that is important to solving the user's query, but it fails because of sandboxing, rerun the command with approval.\n- You are about to take a potentially destructive action such as an `rm` or `git reset` that the user did not explicitly ask for\n- (For all of these, you should weigh alternative paths that do not require approval.)\n\nNote that when sandboxing is set to read-only, you'll need to request approval for any command that isn't a read.\n\nYou will be told what filesystem sandboxing, network sandboxing, and approval mode are active in a developer or user message. If you are not told about this, assume that you are running with workspace-write, network sandboxing ON, and approval on-failure.\n\n## Ambition vs. precision\n\nFor tasks that have no prior context (i.e. the user is starting something brand new), you should feel free to be ambitious and demonstrate creativity with your implementation.\n\nIf you're operating in an existing codebase, you should make sure you do exactly what the user asks with surgical precision. Treat the surrounding codebase with respect, and don't overstep (i.e. changing filenames or variables unnecessarily). You should balance being sufficiently ambitious and proactive when completing tasks of this nature.\n\nYou should use judicious initiative to decide on the right level of detail and complexity to deliver based on the user's needs. This means showing good judgment that you're capable of doing the right extras without gold-plating. This might be demonstrated by high-value, creative touches when scope of the task is vague; while being surgical and targeted when scope is tightly specified.\n\n## Sharing progress updates\n\nFor especially longer tasks that you work on (i.e. requiring many tool calls, or a plan with multiple steps), you should provide progress updates back to the user at reasonable intervals. These updates should be structured as a concise sentence or two (no more than 8-10 words long) recapping progress so far in plain language: this update demonstrates your understanding of what needs to be done, progress so far (i.e. files explores, subtasks complete), and where you're going next.\n\nBefore doing large chunks of work that may incur latency as experienced by the user (i.e. writing a new file), you should send a concise message to the user with an update indicating what you're about to do to ensure they know what you're spending time on. Don't start editing or writing large files before informing the user what you are doing and why.\n\nThe messages you send before tool calls should describe what is immediately about to be done next in very concise language. If there was previous work done, this preamble message should also include a note about the work done so far to bring the user along.\n\n## Presenting your work and final message\n\nYour final message should read naturally, like an update from a concise teammate. For casual conversation, brainstorming tasks, or quick questions from the user, respond in a friendly, conversational tone. You should ask questions, suggest ideas, and adapt to the user’s style. If you've finished a large amount of work, when describing what you've done to the user, you should follow the final answer formatting guidelines to communicate substantive changes. You don't need to add structured formatting for one-word answers, greetings, or purely conversational exchanges.\n\nYou can skip heavy formatting for single, simple actions or confirmations. In these cases, respond in plain sentences with any relevant next step or quick option. Reserve multi-section structured responses for results that need grouping or explanation.\n\nThe user is working on the same computer as you, and has access to your work. As\nsuch there's no need to show the full contents of large files you have already\nwritten unless the user explicitly asks for them. Similarly, if you've created\nor modified files using `edit`, there's no need to tell users to \"save the file\" or \"copy the code into a file\"—just reference the file path.\n\nIf there's something that you think you could help with as a logical next step, concisely ask the user if they want you to do so. Good examples of this are running tests, committing changes, or building out the next logical component. If there’s something that you couldn't do (even with approval) but that the user might want to do (such as verifying changes by running the app), include those instructions succinctly.\n\nBrevity is very important as a default. You should be very concise (i.e. no more than 10 lines), but can relax this requirement for tasks where additional detail and comprehensiveness is important for the user's understanding.\n\n### Final answer structure and style guidelines\n\nYou are producing plain text that will later be styled by the CLI. Follow these rules exactly. Formatting should make results easy to scan, but not feel mechanical. Use judgment to decide how much structure adds value.\n\n**Section Headers**\n- Use only when they improve clarity — they are not mandatory for every answer.\n- Choose descriptive names that fit the content\n- Keep headers short (1–3 words) and in `**Title Case**`. Always start headers with `**` and end with `**`\n- Leave no blank line before the first bullet under a header.\n- Section headers should only be used where they genuinely improve scanability; avoid fragmenting the answer.\n\n**Bullets**\n- Use `-` followed by a space for every bullet.\n- Bold the keyword, then colon + concise description.\n- Merge related points when possible; avoid a bullet for every trivial detail.\n- Keep bullets to one line unless breaking for clarity is unavoidable.\n- Group into short lists (4–6 bullets) ordered by importance.\n- Use consistent keyword phrasing and formatting across sections.\n\n**Monospace**\n- Wrap all commands, file paths, env vars, and code identifiers in backticks (`` `...` ``).\n- Apply to inline examples and to bullet keywords if the keyword itself is a literal file/command.\n- Never mix monospace and bold markers; choose one based on whether it’s a keyword (`**`) or inline code/path (`` ` ``).\n\n**Structure**\n- Place related bullets together; don’t mix unrelated concepts in the same section.\n- Order sections from general → specific → supporting info.\n- For subsections (e.g., “Binaries” under “Rust Workspace”), introduce with a bolded keyword bullet, then list items under it.\n- Match structure to complexity:\n  - Multi-part or detailed results → use clear headers and grouped bullets.\n  - Simple results → minimal headers, possibly just a short list or paragraph.\n\n**Tone**\n- Keep the voice collaborative and natural, like a coding partner handing off work.\n- Be concise and factual — no filler or conversational commentary and avoid unnecessary repetition\n- Use present tense and active voice (e.g., “Runs tests” not “This will run tests”).\n- Keep descriptions self-contained; don’t refer to “above” or “below”.\n- Use parallel structure in lists for consistency.\n\n**Don’t**\n- Don’t use literal words “bold” or “monospace” in the content.\n- Don’t nest bullets or create deep hierarchies.\n- Don’t output ANSI escape codes directly — the CLI renderer applies them.\n- Don’t cram unrelated keywords into a single bullet; split for clarity.\n- Don’t let keyword lists run long — wrap or reformat for scanability.\n\nGenerally, ensure your final answers adapt their shape and depth to the request. For example, answers to code explanations should have a precise, structured explanation with code references that answer the question directly. For tasks with a simple implementation, lead with the outcome and supplement only with what’s needed for clarity. Larger changes can be presented as a logical walkthrough of your approach, grouping related steps, explaining rationale where it adds value, and highlighting next actions to accelerate the user. Your answers should provide the right level of detail while being easily scannable.\n\nFor casual greetings, acknowledgements, or other one-off conversational messages that are not delivering substantive information or structured results, respond naturally without section headers or bullet formatting.\n",
+            "Here is some useful information about the environment you are running in:\n<env>\n  Working directory: /workspace/repo\n  Is directory a git repo: yes\n  Platform: linux\n  Today's date: Wed Oct 29 2025\n</env>\n<project>\n  app/\n\tapi/\n\t\tauth/\n\t\t\t[...all]/\n\t\t\t\troute.ts\n\tdashboard/\n\t\tdata.json\n\t\tlayout.tsx\n\t\tpage.tsx\n\t\ttheme.css\n\tsign-in/\n\t\tpage.tsx\n\tsign-up/\n\t\tpage.tsx\n\tfavicon.ico\n\tglobals.css\n\tlayout.tsx\n\tpage.tsx\ncomponents/\n\tui/\n\t\taccordion.tsx\n\t\talert-dialog.tsx\n\t\talert.tsx\n\t\taspect-ratio.tsx\n\t\tavatar.tsx\n\t\tbadge.tsx\n\t\tbreadcrumb.tsx\n\t\tbutton.tsx\n\t\tcalendar.tsx\n\t\tcard.tsx\n\t\tcarousel.tsx\n\t\tchart.tsx\n\t\tcheckbox.tsx\n\t\tcollapsible.tsx\n\t\tcommand.tsx\n\t\tcontext-menu.tsx\n\t\tdialog.tsx\n\t\tdrawer.tsx\n\t\tdropdown-menu.tsx\n\t\tform.tsx\n\t\thover-card.tsx\n\t\tinput-otp.tsx\n\t\tinput.tsx\n\t\tlabel.tsx\n\t\tmenubar.tsx\n\t\tnavigation-menu.tsx\n\t\tpagination.tsx\n\t\tpopover.tsx\n\t\tprogress.tsx\n\t\tradio-group.tsx\n\t\tresizable.tsx\n\t\tscroll-area.tsx\n\t\tselect.tsx\n\t\tseparator.tsx\n\t\tsheet.tsx\n\t\tsidebar.tsx\n\t\tskeleton.tsx\n\t\tslider.tsx\n\t\tsonner.tsx\n\t\tswitch.tsx\n\t\ttable.tsx\n\t\ttabs.tsx\n\t\ttextarea.tsx\n\t\ttoggle-group.tsx\n\t\ttoggle.tsx\n\t\ttooltip.tsx\n\tapp-sidebar.tsx\n\tauth-buttons.tsx\n\tchart-area-interactive.tsx\n\tdata-table.tsx\n\tnav-documents.tsx\n\tnav-main.tsx\n\tnav-secondary.tsx\n\tnav-user.tsx\n\tsection-cards.tsx\n\tsite-header.tsx\n\ttheme-provider.tsx\n\ttheme-toggle.tsx\ndb/\n\tschema/\n\t\tauth.ts\n\tindex.ts\ndocker/\n\tpostgres/\n\t\tinit.sql\ndocumentation/\n\ttasks/\n\t\timprove-readme-documentation_2025-10-29_13-55-11-488Z.json\n\tapp_flow_document.md\n\tapp_flowchart.md\n\tbackend_structure_document.md\n\tfrontend_guidelines_document.md\n\tproject_requirements_document.md\n\tsecurity_guideline_document.md\n\ttech_stack_document.md\ndrizzle/\n\tmeta/\n\t\t_journal.json\n\t\t0000_snapshot.json\n\t0000_overjoyed_morlun.sql\nhooks/\n\tuse-mobile.ts\nlib/\n\tauth-client.ts\n\tauth.ts\n\tutils.ts\npublic/\n\tcodeguide-logo.png\n\tfile.svg\n\tglobe.svg\n\tnext.svg\n\tvercel.svg\n\twindow.svg\n.dockerignore\n.env.example\n.gitignore\n.prettierrc\nCLAUDE.md\ncodeguide-backdrop.svg\ncomponents.json\ndocker-compose.yaml\nDockerfile\ndrizzle.config.ts\neslint.config.mjs\nnext.config.ts\nopencode.json\npackage-lock.json\npackage.json\npostcss.config.mjs\nREADME.md\ntsconfig.json\n</project>\n# Codespace Task Management Guide\n\n## Documentation Available\n\n📚 **Project Documentation**: Check the documentation files in this directory for project-specific setup instructions and guides.\n**Project Tasks**: Check the tasks directory in documentation/tasks for the list of tasks to be completed. Use the CLI commands below to interact with them.\n\n## MANDATORY Task Management Workflow\n\n🚨 **YOU MUST FOLLOW THIS EXACT WORKFLOW - NO EXCEPTIONS** 🚨\n\n### **STEP 1: DISCOVER TASKS (MANDATORY)**\nYou MUST start by running this command to see all available tasks:\n```bash\ntask-manager list-tasks\n```\n\n### **STEP 2: START EACH TASK (MANDATORY)**\nBefore working on any task, you MUST mark it as started:\n```bash\ntask-manager start-task <task_id>\n```\n\n### **STEP 3: COMPLETE OR CANCEL EACH TASK (MANDATORY)**\nAfter finishing implementation, you MUST mark the task as completed, or cancel if you cannot complete it:\n```bash\ntask-manager complete-task <task_id> \"Brief description of what was implemented\"\n# or\ntask-manager cancel-task <task_id> \"Reason for cancellation\"\n```\n\n## Task Files Location\n\n📁 **Task Data**: Your tasks are organized in the `documentation/tasks/` directory:\n- Task JSON files contain complete task information\n- Use ONLY the `task-manager` commands listed above\n- Follow the mandatory workflow sequence for each task\n\n## MANDATORY Task Workflow Sequence\n\n🔄 **For EACH individual task, you MUST follow this sequence:**\n\n1. 📋 **DISCOVER**: `task-manager list-tasks` (first time only)\n2. 🚀 **START**: `task-manager start-task <task_id>` (mark as in progress)\n3. 💻 **IMPLEMENT**: Do the actual coding/implementation work\n4. ✅ **COMPLETE**: `task-manager complete-task <task_id> \"What was done\"` (or cancel with `task-manager cancel-task <task_id> \"Reason\"`)\n5. 🔁 **REPEAT**: Go to next task (start from step 2)\n\n## Task Status Options\n\n- `pending` - Ready to work on\n- `in_progress` - Currently being worked on  \n- `completed` - Successfully finished\n- `blocked` - Cannot proceed (waiting for dependencies)\n- `cancelled` - No longer needed\n\n## CRITICAL WORKFLOW RULES\n\n❌ **NEVER skip** the `task-manager start-task` command\n❌ **NEVER skip** the `task-manager complete-task` command  (use `task-manager cancel-task` if a task is not planned, not required, or you must stop it)\n❌ **NEVER work on multiple tasks simultaneously**\n✅ **ALWAYS complete one task fully before starting the next**\n✅ **ALWAYS provide completion details in the complete command**\n✅ **ALWAYS follow the exact 3-step sequence: list → start → complete (or cancel if not required)**"
+          ],
+          "modelID": "gpt-5",
+          "providerID": "openai",
+          "mode": "build",
+          "path": {
+            "cwd": "/workspace/repo",
+            "root": "/workspace/repo"
+          },
+          "cost": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "reasoning": 0,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          }
+        }
+      },
+      "timestamp": "2025-10-29T13:56:59.238Z",
+      "eventNumber": 39
+    }
+  ]
+}
