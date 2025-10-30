@@ -1,14 +1,20 @@
 flowchart TD
-  Start[Landing Page]
-  SignUpPage[Sign Up Page]
-  SignInPage[Sign In Page]
-  AuthAPI[Authentication API Endpoint]
-  DashboardPage[Dashboard Page]
-  Start -->|Select Sign Up| SignUpPage
-  Start -->|Select Sign In| SignInPage
-  SignUpPage -->|Submit Credentials| AuthAPI
-  SignInPage -->|Submit Credentials| AuthAPI
-  AuthAPI -->|Success| DashboardPage
-  AuthAPI -->|Error| SignUpPage
-  AuthAPI -->|Error| SignInPage
-  DashboardPage -->|Click Logout| Start
+    A[User] --> B[Sign In Page]
+    B --> C[Dashboard]
+    C --> D[AI Chat Page]
+    C --> E[AI Search Page]
+    C --> F[AI Image Generation Page]
+    D --> G[assistant UI Components]
+    G --> H[Model Selector Component]
+    G --> I[File Attachment Component]
+    G --> J[Message Input]
+    J --> K[Chat API Route]
+    K --> L[better-auth Verification]
+    L --> M[@ai-sdk Invocation]
+    M --> N[Stream AI Response]
+    N --> G
+    K --> O[Save Message to DB]
+    O --> P[Drizzle ORM]
+    P --> Q[PostgreSQL Database]
+    E --> R[Search API Route]
+    F --> S[Image API Route]
